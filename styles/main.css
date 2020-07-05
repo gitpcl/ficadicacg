@@ -1,0 +1,258 @@
+:root {
+    --purple-color:#330C2D;
+    --pink-color:#FA006E;
+    --green-color:#41EAD4;
+    --white-color: #FDFFFC;
+    --lilas-color:#D3C4E3;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/*HEADER*/
+
+header {
+    background-color:var(--var(--white-color)-color);
+}
+
+.header-content {
+    margin: 0 auto;
+    width:1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0;
+}
+
+/****LOGO****/
+
+.logo img {
+    width: 80px;
+}
+
+/****HEADER LINKS ****/
+
+.header-links {
+    margin: auto 0;
+    text-align: right;
+}
+
+.header-links a {
+    text-decoration:none;
+    margin-right: 5px;
+    color:rgb(51, 51, 51);
+}
+
+.header-links a:hover {
+    color: var(--green-color);
+}
+
+.header-links button {
+    padding: 10px 20px;
+    background-color: #FA016E;
+    border: none;
+    border-radius: 5px;
+    color:var(--white-color);
+    cursor: pointer;
+}
+
+.header-links button a {
+    color: var(--white-color);
+}
+
+.header-links button:hover {
+    color:var(--purple-color);
+    background-color:var(--green-color);
+}
+
+/*CONTENT*/
+
+.banner {
+    width:100%;
+    height:580px;
+    background: url("../assets/campo-grande.jpg");
+    background-size:cover;
+    position:relative;
+}
+
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: rgb(51,13,45,.8);
+    text-align:center;
+}
+
+.overlay h1 {
+    font-weight:100;
+    color:var(--white-color);
+    margin-top: 35vh;
+    font-size: 40px;
+}
+
+.overlay button {
+    font-weight:100;
+    color:var(--white-color);
+    padding: 20px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FA016E;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.overlay button:hover {
+    background-color:transparent;
+    border: 1px solid var(--white-color);
+}
+
+/*ABOUT*/
+
+.stat-content {
+    font-weight:100;
+}
+
+.stat {
+    width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.stat-text {
+    padding: 50px;
+}
+
+.stat-text img {
+    width:110px;
+}
+
+.stat-text h1 {
+    font-weight:100;
+    margin-bottom: 10px;
+}
+
+.stat-img {
+    padding:30px;
+}
+
+.stat-img img {
+    margin-top: 55px;
+    width: 350px;
+}
+
+/*DIVULGUE*/
+
+.divulgue {
+    background-color: var(--pink-color);
+}
+
+.divulgue-content {
+    text-align:center;
+    padding:30px;
+}
+
+.divulgue-content h3 {
+    color: var(--white-color);
+    font-weight:100;
+    display:inline-block;
+    margin-right: 10px;
+}
+
+.divulgue-content button {
+    padding: 10px 20px;
+    background:transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.divulgue-content button:hover {
+    background:var(--green-color);
+    border:none;
+    border: 1px solid var(--green-color);
+    color: var(--purple-color);
+}
+
+/*GIVEAWAY*/
+
+.content-results {
+    background-color: #330D2D;
+    padding: 20px 0;
+}
+
+.recent-giveaway-results h1 {
+    margin: 20px 0;
+    color:var(--white-color);
+    font-weight: 100;
+    text-align:center;
+}
+
+.recent-giveaway-results {
+    width:1100px;
+    margin: 30px auto;
+}
+
+.posts {
+    width:1100px;
+    margin: 30px auto;
+}
+
+.posts h1 {
+    margin: 20px 0;
+    font-weight: 100;
+    text-align:center;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #232323;
+    font-size:14px;
+    font-weight:100;
+}
+
+.footer-content {
+    margin: 0 auto;
+    width:1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 40px 0;
+}
+
+.footer-logo img {
+    width:80px;
+}
+
+.footer-links h3 {
+    margin-bottom: 10px;
+    color: var(--white-color);
+}
+
+.footer-links a {
+    display:block;
+    text-decoration:none;
+    color:var(--white-color); 
+}
+
+.footer-links a:hover {
+    color:var(--green-color);
+}
+
+.bottom-footer {
+    background-color: rgb(250, 250, 250);
+    text-align: center;
+    font-weight: 400;
+}
+
+.bottom-footer p {
+    padding: 20px 0;
+}
