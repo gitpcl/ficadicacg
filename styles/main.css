@@ -1,14 +1,16 @@
 :root {
-    --purple-color:#330C2D;
-    --pink-color:#FA006E;
-    --green-color:#41EAD4;
-    --white-color: #FDFFFC;
-    --lilas-color:#D3C4E3;
+    --purple-color:rgba(51, 12, 45, 1);
+    --pink-color:rgba(250, 0, 110, 1);
+    --green-color:rgba(65, 234, 212, 1);
+    --white-color: rgba(253, 255, 252, 1);
+    --lilas-color:rgba(211, 196, 227, 1);
+    --yellow-color: rgba(247, 236, 6, 1);
 }
 
 * {
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 body {
@@ -17,70 +19,35 @@ body {
 
 /*HEADER*/
 
-header {
-    background-color:var(--var(--white-color)-color);
+header .navbar {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.header-content {
-    margin: 0 auto;
-    width:1100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 20px 0;
+header .navbar img {
+    width: 4em;
+    height: 4em;
 }
 
-/****LOGO****/
-
-.logo img {
-    width: 80px;
-}
-
-/****HEADER LINKS ****/
-
-.header-links {
-    margin: auto 0;
-    text-align: right;
-}
-
-.header-links a {
-    text-decoration:none;
-    margin-right: 5px;
-    color:rgb(51, 51, 51);
-}
-
-.header-links a:hover {
-    color: var(--green-color);
-}
-
-.header-links button {
-    padding: 10px 20px;
-    background-color: #FA016E;
-    border: none;
-    border-radius: 5px;
-    color:var(--white-color);
-    cursor: pointer;
-}
-
-.header-links button a {
-    color: var(--white-color);
-}
-
-.header-links button:hover {
-    color:var(--purple-color);
-    background-color:var(--green-color);
+header .navbar .navbar_links span {
+    color: var(--pink-color);
+    font-size: 2rem;
+    margin-left: 10px;
 }
 
 /*CONTENT*/
 
-.banner {
-    width:100%;
-    height:580px;
+#home-page .banner {
+    width:100vw;
+    height: calc(100vh - 108px);
     background: url("../assets/campo-grande.jpg");
     background-size:cover;
     position:relative;
 }
 
-.overlay {
+#home-page .overlay {
     position:absolute;
     top:0;
     left:0;
@@ -90,14 +57,14 @@ header {
     text-align:center;
 }
 
-.overlay h1 {
+#home-page .overlay h1 {
     font-weight:100;
     color:var(--white-color);
     margin-top: 35vh;
     font-size: 40px;
 }
 
-.overlay button {
+#home-page .overlay button {
     font-weight:100;
     color:var(--white-color);
     padding: 20px 30px;
@@ -106,121 +73,108 @@ header {
     background-color: #FA016E;
     margin-top: 20px;
     cursor: pointer;
+    font-size: 1rem;
 }
 
-.overlay button:hover {
+#home-page .overlay button:hover {
     background-color:transparent;
     border: 1px solid var(--white-color);
 }
 
 /*PROMO*/
-.promo-content {
-    width: 1100px;
+#home-page .promo-content {
+    width: 100vw;
     margin: 0 auto;
 }
 
-.promo-content img {
-    width:90%;
-    margin: 5% 5%;
+#home-page .promo-content img {
+    width:100%;
 }
 
-/*ABOUT*/
+/*CTA*/
 
-.stat-content {
-    font-weight:100;
+#home-page .cta {
+    background-color: var(--purple-color);
 }
 
-.stat {
-    width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.stat-text {
-    padding: 50px;
-}
-
-.stat-text img {
-    width:110px;
-}
-
-.stat-text h1 {
-    font-weight:100;
-    margin-bottom: 10px;
-}
-
-.stat-img {
-    padding:30px;
-}
-
-.stat-img img {
-    margin-top: 55px;
-    width: 350px;
-}
-
-/*DIVULGUE*/
-
-.divulgue {
-    background-color: var(--pink-color);
-}
-
-.divulgue-content {
+#home-page .cta-content {
     text-align:center;
     padding:30px;
 }
 
-.divulgue-content h3 {
+#home-page .cta-content h3 {
     color: var(--white-color);
     font-weight:100;
-    display:inline-block;
-    margin-right: 10px;
+    display:block;
+    margin-bottom: 20px;
 }
 
-.divulgue-content button {
+#home-page .cta-content button {
     padding: 10px 20px;
     background:transparent;
-    border: 1px solid var(--white-color);
+    border: 2px solid var(--white-color);
     color: var(--white-color);
     border-radius: 5px;
     cursor:pointer;
+    font-weight: bold;
 }
 
-.divulgue-content button:hover {
+#home-page .cta-content button:hover {
     background:var(--green-color);
     border:none;
     border: 1px solid var(--green-color);
     color: var(--purple-color);
 }
 
-/*GIVEAWAY*/
 
-.content-results {
-    background-color: #330D2D;
-    padding: 20px 0;
+/*STAT*/
+
+#home-page .stat-content {
+    width: 100vw;
+    margin: 20px auto;
+    text-align: center;
+}
+#home-page .stat-content h2 {
+    padding: 20px;
+    color:var(--purple-color);
+}
+#home-page .stat-content canvas {
+    width:95vw !important;
 }
 
-.recent-giveaway-results h1 {
-    margin: 20px 0;
-    color:var(--white-color);
-    font-weight: 100;
+/*DIVULGUE*/
+
+#home-page .divulgue {
+    background-color: var(--pink-color);
+}
+
+#home-page .divulgue-content {
     text-align:center;
+    padding:30px;
 }
 
-.recent-giveaway-results {
-    width:1100px;
-    margin: 30px auto;
+#home-page .divulgue-content h3 {
+    color: var(--white-color);
+    font-weight:100;
+    display:block;
+    margin-bottom: 20px;
 }
 
-.posts {
-    width:1100px;
-    margin: 30px auto;
+#home-page .divulgue-content button {
+    padding: 10px 20px;
+    background:transparent;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    border-radius: 5px;
+    cursor:pointer;
+    font-weight: bold;
 }
 
-.posts h1 {
-    margin: 20px 0;
-    font-weight: 100;
-    text-align:center;
+#home-page .divulgue-content button:hover {
+    background:var(--green-color);
+    border:none;
+    border: 1px solid var(--green-color);
+    color: var(--purple-color);
 }
 
 /*FOOTER*/
@@ -229,41 +183,48 @@ footer {
     background-color: #232323;
     font-size:14px;
     font-weight:100;
+    display:block;
 }
 
-.footer-content {
+footer .top-footer {
     margin: 0 auto;
-    width:1100px;
+    width:100vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 40px 0;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 40px;
 }
 
-.footer-logo img {
+footer .top-footer .footer-logo img {
     width:80px;
+    margin-bottom: 10px;
 }
 
-.footer-links h3 {
+footer .top-footer .footer-links h3 {
     margin-bottom: 10px;
     color: var(--white-color);
 }
 
-.footer-links a {
+footer .top-footer .footer-links p {
+    color: var(--white-color);
+}
+
+footer .top-footer .footer-links a {
     display:block;
     text-decoration:none;
     color:var(--white-color); 
+    margin-bottom: 10px;
 }
 
-.footer-links a:hover {
+footer .top-footer .footer-links a:hover {
     color:var(--green-color);
 }
 
-.bottom-footer {
+footer .bottom-footer {
     background-color: rgb(250, 250, 250);
     text-align: center;
     font-weight: 400;
 }
 
-.bottom-footer p {
+footer .bottom-footer p {
     padding: 20px 0;
 }

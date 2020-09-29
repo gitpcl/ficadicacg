@@ -7,98 +7,105 @@
         <!--Links-->
         <link rel="stylesheet" href="styles/main.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Chart.js css link-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css">
 
         <title>Fica Dica CG</title>
     </head>
     <body>
         <header>
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.html"><img src="assets/logo.png" alt="Logo"></a>
-                </div>
-                <div class="header-links">
-                    <a href="about.html">Sobre</a>
-                    <a href="results.html">Sorteios</a>
-                    <a href="cases.html">Casos de Sucesso</a>
-                    <a href="http://bit.ly/2wcn05c"><button>Contato</button></a>
+            <div class="navbar">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="FicaDicaCG Logo">
+                    <div id="logo"></div>
+                </a>
+                <div class="navbar_links">
+                    <a href="tel:5015004020">
+                        <span class="material-icons">info</span></a>
+                    <a href="http://bit.ly/2wcn05c">
+                        <span class="material-icons">phone</span></a>
                 </div>
             </div>
         </header>
 
-        <div class="banner">
-            <div class="overlay">
-                <h1>O
-                    <strong>maior portal de dicas</strong>
-                    do Matro Grosso do Sul</h1>
-                <h3></h3>
-                <a href="https://www.instagram.com/ficadicacg"><button>Siga o nosso
-                    <strong>instagram</strong>
-                </button></a>
-            </div>
-        </div>
-        <div class="promo">
-            <div class="promo-content">
-                <img src="assets/promo.gif" alt="Promo Gif">
-            </div>
-        </div>
-        <div class="stat-content">
-            <div class="stat">
-                <div class="stat-text">
-                    <h1><strong>Quem são</strong> nossos seguidores</h1>
-                </div>
-                <div class="stat-img">
-                    <img src="assets/genero.jpg" alt="Genero">
-                </div>
-                <div class="stat-img">
-                    <img src="assets/localizacao.jpg" alt="Localização">
+        <main id="home-page">
+            <div class="banner">
+                <div class="overlay">
+                    <h1>O
+                        <strong>maior portal de dicas</strong>
+                        do Matro Grosso do Sul</h1>
+                    <h3></h3>
+                    <a href="https://www.instagram.com/ficadicacg">
+                        <button>Siga o nosso
+                            <strong>instagram</strong>
+                        </button>
+                    </a>
                 </div>
             </div>
-        </div>
-         <div class="divulgue">
-            <div class="divulgue-content">
-                <h3>Divulgue o seu negócio em nossa <strong>rede social</strong></h3>
-                <a href="http://bit.ly/2wcn05c"><button>Clique Aqui</button></a>
+
+            <div class="promo">
+                <div class="promo-content">
+                    <img src="assets/promo.gif" alt="Promo Gif">
+                </div>
             </div>
-        </div>
-        <div class="content-results">
-            <div class="recent-giveaway-results">
-                <h1>
-                    <strong>Sorteios</strong>
-                    Recentes</h1>
-                <script src="https://apps.elfsight.com/p/platform.js" defer="defer"></script>
-                <div class="elfsight-app-5e569804-99b7-48f5-92f0-3f7fc8861b70"></div>
+
+            <div class="cta">
+                <div class="cta-content">
+                    <h3>Venha fazer parte do time que mais<br> cresce em
+                        <strong>Campo Grande</strong>
+                    </h3>
+                    <a href="http://bit.ly/2wcn05c">
+                        <button>Faça parte do nosso time</button>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="content-posts">
-            <div class="posts">
-                <h1>
-                    <strong>Posts</strong>
-                    Recentes</h1>
-                <script src="https://apps.elfsight.com/p/platform.js" defer="defer"></script>
-                <div class="elfsight-app-613dd94c-a367-4ecd-856c-0f2064df67de"></div>
+
+            <div class="stat-content">
+                <h2>Interesses de nossa audiência</h2>
+                <canvas id="audienceSplit" width="400" height="400"></canvas>
+
+                <h2>Sexo da nossa audiência</h2>
+                <canvas id="genderSplit" width="400" height="400"></canvas>
+
+                <h2>Nossas cidades mais populares</h2>
+                <canvas id="cities" width="400" height="400"></canvas>
+
+                <h2>Métricas de faixa etária</h2>
+                <canvas id="age" width="400" height="400"></canvas>
             </div>
-        </div>
+
+            <div class="divulgue">
+                <div class="divulgue-content">
+                    <h3>Divulgue o seu negócio<br> em nossa
+                        <strong>rede social</strong>
+                    </h3>
+                    <a href="http://bit.ly/2wcn05c">
+                        <button>Clique Aqui</button>
+                    </a>
+                </div>
+            </div>
+
+        </main>
 
         <footer>
-            <div class="footer-content">
+            <div class="top-footer">
                 <div class="footer-logo">
-                    <img src="assets/footer-logo.png" alt="">
+                    <a href="index.html"><img src="assets/footer-logo.png" alt="FicaDicaCG Logo"></a>
                 </div>
                 <div class="footer-links">
                     <h3>Menu</h3>
                     <a href="about.html">Sobre</a>
-                    <a href="results.html">Sorteios</a>
-                    <a href="cases.html">Casos de Sucesso</a>
                     <a href="http://bit.ly/2wcn05c">Contato</a>
                 </div>
                 <div class="footer-links">
                     <h3>Dicas</h3>
-                    <a href="bestof.html">Melhores 2019</a>
                     <a href="cases.html">Casos de Sucesso</a>
                 </div>
                 <div class="footer-links">
-                    <h3>Siga no Instagram</h3>
-                    <a href="https://www.instagram.com/ficadicacg">@ficadicacg</a>
+                    <h3>Esperamos você</h3>
+                    <p>Nos siga no Instagram<a href="https://www.instagram.com/ficadicacg">@ficadicacg</a></p>
                 </div>
             </div>
             <div class="bottom-footer">
@@ -106,6 +113,14 @@
                     <strong>Fica Dica CG</strong>. Todos os direitos reservados.</p>
             </div>
         </footer>
+
+    <!-- Jquery csn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Chart.js link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+    <script src="./scripts/chart.js"></script>
 
     </body>
 </html>
