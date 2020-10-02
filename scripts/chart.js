@@ -33,7 +33,7 @@ var genderSplit = new Chart(ctx, {
         labels: ['Homens', 'Mulheres'],
         datasets: [{
             label: 'Sexo dos seguidores',
-            data: [77, 23],
+            data: [23, 77],
             backgroundColor: [
                 'rgba(51, 12, 45, 1)',
                 'rgba(250, 0, 110, 1)'
