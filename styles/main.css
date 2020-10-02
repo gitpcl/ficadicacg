@@ -134,12 +134,24 @@ header .navbar .navbar_links span {
     margin: 20px auto;
     text-align: center;
 }
-#home-page .stat-content h2 {
+
+
+#home-page .stat-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 60%;
+    justify-content: center;
+}
+
+#home-page .stat-content .wrapper h2 {
     padding: 20px;
     color:var(--purple-color);
+    font-size: 18px;
 }
-#home-page .stat-content canvas {
-    width:95vw !important;
+
+#home-page .stat-content .wrapper {
+    width: 70vw !important;
+    margin: 0 auto;
 }
 
 /*DIVULGUE*/

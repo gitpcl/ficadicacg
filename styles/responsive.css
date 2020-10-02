@@ -1,0 +1,41 @@
+@media (min-width: 600px) {
+
+    #home-page .promo .promo-content {
+        width: 70vw;
+        height:0;
+        
+    }
+
+    #home-page .promo .promo-content img {
+        border-radius: 15px;
+        transform: translateY(-50%);
+        position: relative;
+        z-index:10;
+    }
+
+    #home-page .stat-content .wrapper h2 {
+        padding: 20px;
+        color:var(--purple-color);
+        font-size: 24px;
+    }
+
+    #home-page .cta {
+        z-index:1;
+    }
+
+    #home-page .cta .cta-content h3 {
+        margin-top: 5%;
+    }
+
+    #home-page .stat-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 60%;
+        justify-content: center;
+    }
+    #home-page .stat-content .wrapper {
+        width: 40vw !important;
+        margin: 0 auto;
+    }
+
+}

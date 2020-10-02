@@ -6,6 +6,7 @@
 
         <!--Links-->
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/responsive.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -63,17 +64,25 @@
             </div>
 
             <div class="stat-content">
-                <h2>Interesses de nossa audiência</h2>
-                <canvas id="audienceSplit" width="400" height="400"></canvas>
+                <div class="wrapper">
+                    <h2>Interesses de nossa audiência</h2>
+                    <canvas id="audienceSplit" width="400" height="400"></canvas>
+                </div>
+                
+                <div class="wrapper">
+                    <h2>Gênero da nossa audiência</h2>
+                    <canvas id="genderSplit" width="400" height="400"></canvas>
+                </div>
 
-                <h2>Gênero da nossa audiência</h2>
-                <canvas id="genderSplit" width="400" height="400"></canvas>
-
-                <h2>Nossas cidades mais populares</h2>
-                <canvas id="cities" width="400" height="400"></canvas>
-
-                <h2>Métricas de faixa etária</h2>
-                <canvas id="age" width="400" height="400"></canvas>
+                <div class="wrapper">
+                    <h2>Nossas cidades mais populares</h2>
+                    <canvas id="cities" width="400" height="400"></canvas>
+                </div>
+                
+                <div class="wrapper">
+                    <h2>Métricas de faixa etária</h2>
+                    <canvas id="age" width="400" height="400"></canvas>
+                </div>
             </div>
 
             <div class="divulgue">
