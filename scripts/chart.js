@@ -22,6 +22,9 @@ var audienceSplit = new Chart(ctx, {
             ],
             borderWidth: 0
         }]
+    },
+    options: {
+        responsive: true
     }
     
 });
@@ -44,6 +47,9 @@ var genderSplit = new Chart(ctx, {
             ],
             borderWidth: 0
         }]
+    },
+    options: {
+        responsive: true
     }
 });
 
@@ -69,6 +75,9 @@ var cities = new Chart(ctx, {
             ],
             borderWidth: 0
         }]
+    },
+    options: {
+        responsive: true
     }
 });
 
@@ -103,6 +112,7 @@ var age = new Chart(ctx, {
         }]
     },
     options: {
+        responsive: true,
         scales: {
             yAxes: [{
                 ticks: {
