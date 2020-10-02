@@ -46,6 +46,22 @@
         width: 30vw !important;
     }
 
+    /** ABOUT **/
+
+    #about-page .about {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    #about-page .about .about-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        background: var(--white-color);
+        padding: 30px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+
     footer .top-footer {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         max-width: 1100px;
