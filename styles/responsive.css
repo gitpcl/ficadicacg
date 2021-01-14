@@ -1,70 +1,107 @@
-@media (min-width: 600px) {
+@media (min-width:600px) {
 
-    header .navbar {
-        max-width: 1100px;
-        margin: 0 auto;
-    }
-
-    #home-page .promo .promo-content {
-        width:70%;
-        height:0;
-        
-    }
-
-    #home-page .promo .promo-content img {
-        border-radius: 15px;
-        transform: translateY(-50%);
-        position: relative;
-        z-index:10;
-    }
-
-    #home-page .cta {
-        z-index:1;
-    }
-
-    #home-page .cta .cta-content h3 {
-        margin-top: 5%;
-    }
-
-    #home-page .stat-content {
+    #home-page .wrapper {
+        width:80%;
+        margin:0 auto;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-    }
-    #home-page .stat-content .wrapper {
-        width: 30vw !important;
-        margin: 0 auto;
+        grid-template-columns: repeat(2,1fr);
     }
 
-    #home-page .stat-content .wrapper h2 {
-        padding: 20px;
-        color:var(--purple-color);
-        font-size: 24px;
+    #home-page .right .intro .head,
+    #home-page .right .about-us,
+    #home-page .right .highlights {
+        width: 100%;
+        margin:0 auto;
     }
 
-    #home-page .stat-content .wrapper canvas {
-        width: 30vw !important;
+    #home-page .right .intro .cards-social {
+        width: 80%;
+        margin:0 auto;
     }
 
-    /** ABOUT **/
-
-    #about-page .about {
-        max-width: 1100px;
-        margin: 0 auto;
+    #home-page .right .intro .head img {
+        width: 20%;
+        margin: 40px 20px;
     }
 
-    #about-page .about .about-wrapper {
+    #home-page .left {
+        width: 100%;
+        margin:0 auto;
+        display: inline;
+    }
+
+    #home-page .left img {
+        width:80%;
+    }
+
+    #about-page .card {
+        width:80%;
+        margin: 20px auto;
+    }
+
+    #about-page .card .card-wrapper {
+        display:flex;
+
+    }
+
+    #about-page .card .card-wrapper .inner-card img {
+        width: 20%;
+   }
+
+    #about-page .card .card-wrapper .inner-card:first-child {
+        margin-right: 20px;
+    }
+
+    #about-page .card .inner-card {
+        width: 50%;
+        margin: 80px auto 0;
+
+    }
+
+    #about-page .card .inner-card img {
+        width:20%;
+    }
+
+    #analytics-page .cards-stats {
+        width:80%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:10px;
+        margin:0 auto;
+    }
+
+    #analytics-page .charts-containers {
         width: 80%;
         margin: 0 auto;
-        background: var(--white-color);
-        padding: 30px;
-        border-radius: 15px;
-        margin-bottom: 20px;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
     }
 
-    footer .top-footer {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        max-width: 1100px;
+    #prices-page .prices-wrapper {
+        width:80%;
+        margin:0 auto;
+        grid-template-columns: repeat(2,1fr);
     }
 
+    #offer-page .offer-head img {
+        width: 20%;
+    }
+
+    #offer-page .offer-head h3 {
+        width:35%;
+    }
+
+    #offer-page .offer-head h4 {
+        width:35%;
+    }
+
+    #offer-page .offer-wrapper {
+        width:40%;
+        margin:0 auto;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    footer .footer-wrapper .footer-head img {
+        width: 5%;
+    }
 }

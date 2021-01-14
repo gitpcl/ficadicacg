@@ -1,80 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Fica Dica CG | Sobre</title>
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--Links-->
+        <!-- Links -->
         <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/about.css">
         <link rel="stylesheet" href="styles/responsive.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        <title>Fica Dica CG</title>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/7ee70a9b62.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
         <header>
-            <div class="navbar">
-                <a href="index.html">
-                    <img src="assets/logo.png" alt="FicaDicaCG Logo">
-                    <div id="logo"></div>
-                </a>
-                <div class="navbar_links">
-                    <a href="about.html">
-                        <span class="material-icons">info</span></a>
-                    <a href="http://bit.ly/2wcn05c">
-                        <span class="material-icons">phone</span></a>
+            <div class="covid">
+                <div class="warning">
+                    <a href="https://covid19.apple.com/screening/">
+                        <p>Aprenda sobre COVID-19 e veja os próximos passos</p>
+                    </a>
                 </div>
+            </div>
+            <div class="header">
+                <div class="logo">
+                    <img id="header-logo" src="./assets/logo.png" alt="FicaDicaCG Logo">
+                </div>
+                <div class="links">
+                    <button onclick="toggleNavOpen()">
+                        <i class="fas fa-bars fa-2x"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="navbar">
+                <button onclick="toggleNavClose()">
+                    <i class="fas fa-times fa-2x"></i>
+                </button>
+
+                <img id="logo_slider" src="./assets/logo.png" alt="Logo">
+
+                <ul>
+                    <a href="index.html">
+                        <li>
+                            <i class="fas fa-home"></i>Inicio
+                        </li>
+                    </a>
+                    <a href="about.html">
+                        <li>
+                            <i class="far fa-address-card"></i>Sobre
+                        </li>
+                    </a>
+                    <a href="analytics.html">
+                        <li>
+                            <i class="fas fa-chart-line"></i>Media Kit
+                        </li>
+                    </a>
+                    <a href="mailto:ficadicacg@gmail.com">
+                        <li>
+                            <i class="far fa-envelope"></i>Email
+                        </li>
+                    </a>
+                </ul>
             </div>
         </header>
-
         <main id="about-page">
-            <div class="about">
-                <div class="about-wrapper">
-                    <h1><strong>Sobre</strong> Nós</h1>
+            <div class="card">
+                <h1>
+                    <span>Olá</span>
+                    , somos o
+                    <a href="https://www.instagram.com/ficadicacg/">@ficadicacg</a>
+                </h1>
+                <p>Nossa missão é mostrar o melhor que Campo Grande tem a aferecer.</p>
+                <div class="card-wrapper">
+                    <div class="inner-card">
+                        <img src="../assets/may.jpg">
+                        <h3>Mayara G.</h3>
+                        <p>Mayara é de Campo Grande, Brasil, onde ela passa o seu tempo atendendo seus clients, desenvolvendo negócios e trabalhando como uma influenciadora digital trazendo as melhores dicas que Campo Grande tem para oferecer.</p>
+                        <div class="profile-links">
+                            <a href="mailto:ficadicacg@gmail.com">
+                                <i class="fa fa-envelope-o"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="inner-card">
+                        <img src="../assets/comercial.jpg" alt="Profile photo">
+                        <h3>Perfil Comercial</h3>
+                        <p>Este é o perfil comercial do nosso time. Nossa equipe está por tras desse perfil dispondo de uma assesoria e assistência básica e captura de clientes.</p>
+                        <div class="profile-links">
+                            <a href="https://www.instagram.com/ficadicacgcomercial/">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </main>
+            <footer>
+                <div class="footer-wrapper">
+                    <div class="footer-head">
+                        <img src="assets/logo.png" alt="FicaDicaCG Logo">
+                        <span>PORTAL DE DICAS</span>
+                    </div>
+                    <ul>
+                        <a href="index.html">
+                            <li>INÍCIO</li>
+                        </a>
+                        <a href="about.html">
+                            <li>SOBRE</li>
+                        </a>
+                        <a href="analytics.html">
+                            <li>MEDIA KIT</li>
+                        </a>
+                    </ul>
+                    <span class="icons">
+                        <a href="https://www.instagram.com/ficadicacg">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:ficadicacg@gmail.com">
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
+                    </span>
                     <p>
-                        Quando o Instagram ainda era o patinho feio das redes sociais, Mayara Gaspar resolveu usar o espaço para falar sobre Campo Grande. Postava fotos de produtos bons e baratos, divulgava as liquidações que valiam a pena e, de repente, o <strong>Fica Dica CG</strong> bombou. Hoje, são quase <strong>198 mil seguidores</strong> e centenas de empresas agradecidas pelos resultados depois da divulgação no <strong>@ficadicacg</strong>.<br><br>
-                        Com apenas 25 anos, Mayara conseguiu um feito daqueles. Tem o maior portal de dicas de Mato Grosso do Sul e também o de maior influência. Uma postagem dela garante que a marca do cliente chegue a milhares de pessoas em instantes e o efeito nas vendas é imediato. Além da abrangência, a credibilidade é o que assegura a resposta positiva em 100% dos casos. <strong>“Não posto nada que não acredito. Por isso, o que entra no Fica Dica tem sempre qualidade. Também não apareço. O que quero é divulgar bons serviços e produtos”</strong>, justifica a empresária.<br><br>
-                        <strong>“Quando comecei eu tinha um objetivo simples: dar dicas de utilidades, mostrando coisas mais acessíveis para o público de Campo Grande. Eram promoções, novidades e todo tipo de oportunidade interessante. O que não imaginava é que a página pudesse ser o maior portal de dicas de Mato Grosso do Sul. Hoje ajudamos milhares de negócios a obterem bons resultados”</strong>, comentou Mayara.<br><br>
-                        Com a curiosidade que é condição fundamental no mundo da internet, em 6 meses de Fica Dica CG Mayara conseguiu capitalizar o negócio e transformar a diversão em renda. Formada em Administração, teve que sai do trabalho por não conseguir conciliar a grande procura.<br><br>
-                        <strong>"Criei o 1º instablog do Estado e quando vi era tanta gente procurando para anunciar que resolvi apostar nesse novo caminho. Hoje, meu orgulho é ver a quantidade de empresas que cresceram junto comigo, graças à divulgação que faço"</strong>, garante.<br><br>
-                        O caso de sucesso começou com o post de dicas e hoje seu perfil alcança em média <strong>1,5 milhão de visualizações por semana</strong>. Por isso, virou referência no mercado. <strong>"Vivo 24 horas para o trabalho. Tem dias que são até engraçados. Uma madrugada dessas, um dos seguidores mandou mensagem perguntando aonde vendia pamonha, porque a esposa estava grávida. Tive de procurar para responder. Recebemos várias mensagens por dia , inclusive de pessoas de fora que estão na cidade"</strong>, conta Mayara.<br><br>
-                        Na lista de clientes, o Fica Dica CG tem nomes conhecidos nacionalmente, e vários casos de sucessos de pessoas que começaram divulgando na página e hoje se tornaram sucesso fora do País . Hoje já entrou na relação de contatos das principais agências de publicidade de Campo Grande.<br><br>
-                        Mas apesar do sucesso, Mayara ainda se coloca como parceira de comerciantes que precisam de publicidade, mas têm poder de investimento menor.<br><br>
-                        <strong>"O custo benefício de investir num perfil como o fica dica é muito menor que se investir em qualquer outro meio de propaganda, e o impacto nem se compara pois as pessoas estão conectadas 24 horas"</strong>,Comenta Mayara.<br><br>
-                        <strong>“Hoje tenho grandes empresas comigo, mas as pequenas são maioria, porque o custo com a propaganda é bem inferior ao de outros veículos de comunicação. Costumo dizer que preparo meus clientes para anúncios caros, porque comigo eles conseguem aumentar muito as vendas e ganhar dinheiro para investir alto em propaganda”</strong>, comenta.<br><br>
-                        Com mais de <strong>198 mil seguidores , 1,5 milhão de visualizações por semana</strong>. O Fica Dica CG ja recebeu um prêmio da radio Uniderp de destaque em redes sociais e também um troféu de jovem empreendedor do ano pela Assembléia.<br><br>
+                        &copy; 2020
+                        <strong style="color: var(--blue-color);">Fica Dica CG</strong>.<br>
+                        Made with &hearts; by
+                        <a href="https://www.gifdesigner.com">Gif Designer</a>
                     </p>
                 </div>
-                
-            </div>
-        </main>
-
-        <footer>
-            <div class="top-footer">
-                <div class="footer-logo">
-                    <a href="index.html"><img src="assets/footer-logo.png" alt="FicaDicaCG Logo"></a>
-                </div>
-                <div class="footer-links">
-                    <h3>Menu</h3>
-                    <a href="about.html">Sobre</a>
-                    <a href="http://bit.ly/2wcn05c">Contato</a>
-                </div>
-                <div class="footer-links">
-                    <h3>Dicas</h3>
-                    <a href="cases.html">Casos de Sucesso</a>
-                </div>
-                <div class="footer-links">
-                    <h3>Esperamos você</h3>
-                    <p>Nos siga no Instagram<a href="https://www.instagram.com/ficadicacg">@ficadicacg</a></p>
-                </div>
-            </div>
-            <div class="bottom-footer">
-                <p>&copy;
-                    <strong>Fica Dica CG</strong>. Todos os direitos reservados.</p>
-            </div>
-        </footer>
-
-    </body>
-</html>
+            </footer>
+            <script src="./scripts/app.js"></script>
+        </body>
+    </html>

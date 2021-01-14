@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Fica Dica CG | O maior portal de dicas do Mato Grosso do Sul</title>
+        <title>Fica Dica CG | Media Kit</title>
 
         <!-- Meta -->
         <meta charset="UTF-8">
@@ -19,14 +19,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
 
         <!--Open Graph Protocol -->
-        <meta property="og:title" content="Siga @ficadicacg">
+        <meta property="og:title" content="Nosso media kit">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://www.ficadicacg.com/">
-        <meta property="og:image" content="assets/opengraph.png">
-        <meta property="og:description" content="O maior portal de dicas do Mato Grosso do Sul"/>
+        <meta property="og:url" content="https://www.ficadicacg.com/analytics.html">
+        <meta property="og:image" content="assets/opengraph-mediakit.png">
+        <meta property="og:description" content="De uma olhadinha em nossas estatísticas."/>
 
         <script src="https://kit.fontawesome.com/7ee70a9b62.js" crossorigin="anonymous"></script>
-
     </head>
     <body>
         <header>
@@ -78,48 +77,95 @@
                 </ul>
             </div>
         </header>
-
-        <main id="home-page">
-            <div class="wrapper">
-                <div class="right">
-                    <div class="intro">
-                        <div class="head">
-                            <img src="assets/logo.png" alt="FicaDicaCG Icon">
-                            <h3>Somos um portal de dicas</h3>
-                            <h1>FICA DICA CG</h1>
-                        </div>
-                        <div class="cards-social">
-                            <div class="card-social">
-                                <p>
-                                    <i class="fa fa-instagram"></i>203K Seguidores</p>
-                            </div>
-                            <div class="card-social">
-                                <p>
-                                    <i class="fab fa-whatsapp"></i><a href="tel:067992234098">+67 99223 4098</a></p>
-                            </div>
-                        </div>
+        <main id="analytics-page">
+            <h2>Estatísticas de Nossa Página
+                <strong>@ficadicacg</strong>
+            </h2>
+            <p>Último update: 01/15/2021</p>
+            <div class="cards-stats">
+                <div class="card-stat">
+                    <div class="circle">
+                        <i class="fa fa-users"></i>
                     </div>
-
-                    <div class="about-us">
-                        <h1>Sobre Nós</h1>
-                        <p>Olá! Esse é o nosso media kit. Abaixo você pode achar as informações demográficas. Se você gostaria de divulgar conosco por favor entre em contato via <a href="tel:067992234098">Whatsapp</a>. Não fazemos atendimento via telefone ou DM.</p>
+                    <span>203K<p>Total de seguidores</p>
+                    </span>
+                </div>
+                <div class="card-stat">
+                    <div class="circle">
+                        <i class="fa fa-trophy"></i>
                     </div>
-
-                    <div class="highlights">
-                        <h1>Destaques</h1>
-                        <ul>
-                            <li>Experiência em marketing</li>
-                            <li>Melhores dicas do Mato Grosso do Sul</li>
-                            <li>Prezamos por resultado</li>
-                        </ul>
-                        <a href="analytics.html">
-                            <button>Nossas estatísticas</button>
-                        </a>
+                    <span>5.3%<p>Engajamento</p>
+                    </span>
+                </div>
+                <div class="card-stat">
+                    <div class="circle">
+                        <i class="fa fa-signal"></i>
                     </div>
+                    <span>3.9M<p>Impressões mensais</p>
+                    </span>
+                </div>
+                <div class="card-stat">
+                    <div class="circle">
+                        <i class="fa fa-eye"></i>
+                    </div>
+                    <span>65.3K<p>Visitas mensais</p>
+                    </span>
+                </div>
+                <div class="card-stat">
+                    <div class="circle">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <span>123K<p>Curtidas mensais</p>
+                    </span>
+                </div>
+                <div class="card-stat">
+                    <div class="circle">
+                        <i class="fa fa-bookmark"></i>
+                    </div>
+                    <span>8.2K<p>Salvadas mensais</p>
+                    </span>
+                </div>
+                <div class="card-stat">
+                    <div class="circle">
+                        <i class="fa fa-share"></i>
+                    </div>
+                    <span>92K<p>Compartilhamentos mensais</p>
+                    </span>
+                </div>
+                <div class="card-stat">
+                    <div class="circle">
+                        <i class="fa fa-mars"></i>
+                    </div>
+                    <span>23%<p>Homens</p>
+                    </span>
+                </div>
+                <div class="card-stat">
+                    <div class="circle">
+                        <i class="fa fa-venus"></i>
+                    </div>
+                    <span>77%<p>Mulheres</p>
+                    </span>
                 </div>
 
-                <div class="left">
-                    <img src="assets/iphone.png" alt="iPhone Image">
+            </div>
+            <div class="charts-containers">
+                <div class="chart-container">
+                    <h1>Nossas cidades mais populares</h1>
+                    <div class="chart-wrapper" style="width:80%; height: 40vh; margin: 0 auto;">
+                        <canvas id="topLocations"></canvas>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h1>Gênero da nossa audiência</h1>
+                    <div class="chart-wrapper" style="width:80%; height: 40vh; margin: 0 auto;">
+                        <canvas id="audienceSplit"></canvas>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h1>Métricas de faixa etária</h1>
+                    <div class="chart-wrapper" style="width:80%; height: 40vh; margin: 0 auto;">
+                        <canvas id="genderSplit"></canvas>
+                    </div>
                 </div>
             </div>
 
@@ -161,6 +207,15 @@
             </div>
         </footer>
 
+        <!-- Jquery csn link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Chart.js link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+        <script src="./scripts/charts.js"></script>
+
         <script src="./scripts/app.js"></script>
+
     </body>
 </html>
