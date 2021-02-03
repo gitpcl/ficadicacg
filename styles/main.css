@@ -162,7 +162,7 @@ header .header .links button span {
 
 #home-page .right .intro .head img {
     width:25%;
-
+    animation-delay: 50ms;
 }
 
 #home-page .right .intro .head h1 {
@@ -255,6 +255,10 @@ header .header .links button span {
 
 #home-page .left  {
     display:none;
+}
+
+#home-page .left img {
+    animation-delay: 100ms;
 }
 
 /* ANALYTICS */
