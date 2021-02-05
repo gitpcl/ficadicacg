@@ -75,7 +75,7 @@ header .header .links {
 }
 
 header .header .links i {
-    color: black;
+    color: var(--text-color);
 }
 
 header .header .links button {
