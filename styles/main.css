@@ -768,13 +768,20 @@ header .header .links button span {
     border: 3px solid rgb(227, 9, 111);
 }
 
-#giveaway-page p + h5 {
-    color:#ff0e56;
-    margin: 5px 0 10px;
+#giveaway-page .results-footer {
+    font-size: 14px;
 }
 
-#giveaway-page #motto {
-    font-size: 14px;
+#giveaway-page .results-footer b {
+    color:#ff0e56;
+}
+
+#giveaway-page .results-footer p:first-of-type {
+    margin-bottom: 3px;
+}
+
+#giveaway-page .results-footer p + p{
+    color: rgb(123, 123, 123);
 }
 
 /* FOOTER */
