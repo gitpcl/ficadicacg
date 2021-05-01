@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sorteio</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+<body>
+    <main id="giveaway-page">
+        <nav>
+            <img src="./assets/logo.png" alt="FicaDicaCG Logo">
+            <p>Por favor coloque as images e depois coloque os textos.</p>
+            <ul>
+                <li>
+                    <label for="giveawayImageFileiInput">Giveaway Image</label>
+                    <input type="file" id="giveawayImageFileiInput">
+                </li>
+                <li>
+                    <label for="winnerImageFileiInput">Winner Image</label>
+                    <input type="file" id="winnerImageFileiInput">
+                </li>
+                <li>
+                    <label for="handleInput">Winner handle</label>
+                    <input type="text" class="handleInput" id="text">
+                </li>
+                <li>
+                    <label for="commentInput">Winner comment</label>
+                    <input type="text" class="commentInput" id="text">
+                </li>
+                <li>
+                    <label for="commentsInput">Number of comments</label>
+                    <input type="text" class="commentsInput" id="text">
+                </li>
+            </ul>
+        </nav>
+        <div class="results">
+            <!-- <h1>Resultado Sorteio</h1> -->
+
+            <div class="square">
+                <div>
+                    <p>Agradecemos a participação!</p>
+                    <h5>@FICADICACG</h5>
+                 </div>
+                <div class="imgBox">
+                    <img id="giveawayImgPreview" src="" alt="Preview">
+
+                    <img id="winnerImgPreview" src="" alt="Preview">
+                </div>
+                
+
+                <div class="resultsBox">
+                    <div class="textBox">
+                        <h4>Ganhador(a)</h4>
+                         <p class="handleText">Text</p> 
+                     </div>
+                     <div class="textBox">
+                        <h4>Comentário</h4>
+                         <p class="commentText">Text</p> 
+                     </div>
+                     <div class="textBox">
+                         <h4>Número</h4>
+                         <p class="numbersText">Text</p>
+                     </div>
+                     <p id="motto">O maior portal de dicas do Mato Grosso do Sul</p>
+                </div>
+
+            </div>
+        </div>
+        
+
+    </main>
+    <script src="./scripts/giveaway.js"></script>
+</body>
+</html>
