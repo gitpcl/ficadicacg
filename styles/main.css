@@ -727,13 +727,13 @@ header .header .links button span {
     height: 40vh;
 }
 
-#giveaway-page .results h1 {
+#giveaway-page .results h3 {
     margin-top: 20px;
     color:#ff0e56;
 }
 
 #giveaway-page .square {
-    margin: 20px;
+    margin: 0 20px;
     border-radius: 5px;
     padding: 20px;
     background-color: white;
@@ -748,6 +748,8 @@ header .header .links button span {
 
 
 #giveaway-page .textBox {
+    display:flex;
+    justify-content: center;
     margin: 5px 0 10px;
     background-color: #f4f4f4;
     padding: 7px 0;
@@ -755,7 +757,7 @@ header .header .links button span {
 }
 
 #giveaway-page #giveawayImgPreview {
-    width: 100%;
+    width: 80%;
     border-radius: 5px;
     border: 3px solid rgb(216, 227, 9);
 }
