@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sorteio</title>
+
+    <link rel="stylesheet" href="./styles/dashboard.css">
+
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./assets/logo.png" alt="FicaDicaCG Logo" style="width:80px;">
+            <button id="newGiveaway" onclick="classChange()">informações do sorteio</button>
+        </div>
+        <div id="menu" class="inactive">
+            <p>Faça o upload da imagem do sorteio e da imagem do perfil do ganhador.</p>
+            <ul>
+                <li>
+                    <label for="giveawayImageFileiInput"><b>Imagem do sorteio</b></label>
+                    <input type="file" id="giveawayImageFileiInput">
+                </li>
+                <li>
+                    <label for="winnerImageFileiInput"><b>Imagem do ganhador</b></label>
+                    <input type="file" id="winnerImageFileiInput">
+                </li>
+                <p>Depois de upload as imagens clique em "ver resultado" para carregar as imagens. Para trocas as images e fazer outro sorteio somente upload nocas imagens e clique em "Ver resultado" novamente.</p>
+                <button id="reloadPage">Ver resultado</button>
+                <p>Para deletar as images clique no botão abaixo.</p>
+                <button id="storageClear">Limpar imagens</button>
+                <p>Escreva as informações do ganhador(a) abaixo depois de ver o resultado.</p>
+                <li>
+                    <label for="handleInput"><b>Instagram do ganhador</b></label>
+                    <input type="text" class="handleInput" id="text">
+                </li>
+                <li>
+                    <label for="commentInput"><b>Comentário</b></label>
+                    <input type="text" class="commentInput" id="text">
+                </li>
+                <li>
+                    <label for="commentsInput"><b>Número de comentários</b></label>
+                    <input type="text" class="commentsInput" id="text">
+                </li>
+                
+            </ul>
+        </div>
+    </header>
+    <main id="giveaway-page">
+
+        <div class="results">
+
+            <div class="square">
+                <h3>Resultado do Sorteio</h3>
+                <div class="imgBox">
+                    <img id="giveawayImgPreview" src="" alt="Preview">
+
+                    <img id="winnerImgPreview" src="" alt="Preview">
+                </div>
+                
+
+                <div class="resultsBox">
+                    <div class="textBox">
+                        <h4>Ganhador(a): </h4>
+                         <p class="handleText"></p> 
+                     </div>
+                     <div class="textBox">
+                        <h4>Comentário: </h4>
+                         <p class="commentText"></p> 
+                     </div>
+                     <div class="textBox">
+                         <h4>Número: </h4>
+                         <p class="numbersText"></p>
+                     </div>
+                     <div class="results-footer">
+                        <p><b>@FICADICACG</b> agradece sua participação!</p>
+                        <p id="motto">O maior portal de dicas do Mato Grosso do Sul</p>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+        
+
+    </main>
+    <script src="./scripts/tools.js"></script>
+</body>
+</html>

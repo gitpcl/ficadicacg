@@ -1,4 +1,3 @@
-/* GIVEAWAY Results */
 :root {
     --bg-color: #fafafa;
     --text-color:#454545;
@@ -37,6 +36,26 @@ header > div {
     align-items: center;
     padding: 1rem;
 }
+
+/* DASHBOARD */
+#dashboard-page {
+    padding: 20px;
+    text-align: center;
+}
+
+#dashboard-page p {
+    margin-bottom: 40px;
+}
+
+#dashboard-page a {
+    background-color:#ff0e56;
+    color: white;
+    padding: 20px 60px;
+    border-radius: 5px;
+
+}
+
+/* GIVEAWAY IMAGE Tool */
 
 #newGiveaway {
     background-color:#ff0e56;
