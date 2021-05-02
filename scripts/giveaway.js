@@ -1,3 +1,9 @@
+function classChange() {
+    document.getElementById("menu").classList.toggle("active");
+}
+
+/* IMAGES STORAGE ******************************************/
+
 document.querySelector("#giveawayImageFileiInput").addEventListener("change", function() {
     const reader = new FileReader();
 
@@ -32,7 +38,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-//*******************************************/
+/* CLEAR STORAGE ******************************************/
+
+const storageClear = document.querySelector('#storageClear').addEventListener("click", function() {
+    localStorage.clear();
+})
+
+/* PAGE RELOAD ******************************************/
+
+const reloadPage = document.querySelector('#reloadPage').addEventListener("click", function() {
+    location.reload() 
+})
+
+
+/* TEXT inputs ******************************************/
+
 const handleInput = document.querySelector('.handleInput');
 const handleText = document.querySelector('.handleText');
 
@@ -53,3 +73,4 @@ const numbersText = document.querySelector('.numbersText');
 commentsInput.addEventListener('input', write => {
     numbersText.textContent = write.target.value
 });
+

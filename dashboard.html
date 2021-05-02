@@ -7,14 +7,17 @@
 
     <title>Sorteio</title>
 
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/dashboard.css">
 
 </head>
 <body>
-    <main id="giveaway-page">
-        <nav>
-            <img src="./assets/logo.png" alt="FicaDicaCG Logo">
-            <p>Por favor coloque as images e depois coloque os textos.</p>
+    <header>
+        <div>
+            <img src="./assets/logo.png" alt="FicaDicaCG Logo" style="width:80px;">
+            <button id="newGiveaway" onclick="classChange()">Formulário</button>
+        </div>
+        <div id="menu" class="inactive">
+            <p>Faça o upload da imagem do sorteio e da imagem do perfil do ganhador.</p>
             <ul>
                 <li>
                     <label for="giveawayImageFileiInput">Giveaway Image</label>
@@ -24,6 +27,11 @@
                     <label for="winnerImageFileiInput">Winner Image</label>
                     <input type="file" id="winnerImageFileiInput">
                 </li>
+                <p>Depois de upload as imagens clique em "ver resultado" para carregar as imagens. Para trocas as images e fazer outro sorteio somente upload nocas imagens e clique em "Ver resultado" novamente.</p>
+                <button id="reloadPage">Ver resultado</button>
+                <p>Para deletar as images clique no botão abaixo.</p>
+                <button id="storageClear">Clear Images</button>
+                <p>Escreva as informações do ganhador(a) abaixo depois de ver o resultado.</p>
                 <li>
                     <label for="handleInput">Winner handle</label>
                     <input type="text" class="handleInput" id="text">
@@ -36,12 +44,16 @@
                     <label for="commentsInput">Number of comments</label>
                     <input type="text" class="commentsInput" id="text">
                 </li>
+                
             </ul>
-        </nav>
+        </div>
+    </header>
+    <main id="giveaway-page">
+
         <div class="results">
-            <h3>Resultado do Sorteio</h3>
 
             <div class="square">
+                <h3>Resultado do Sorteio</h3>
                 <div class="imgBox">
                     <img id="giveawayImgPreview" src="" alt="Preview">
 

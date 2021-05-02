@@ -1,0 +1,159 @@
+/* GIVEAWAY Results */
+:root {
+    --bg-color: #fafafa;
+    --text-color:#454545;
+    --link-color:rgba(250, 0, 110, 1);
+    --header-color: #f5f5f5;
+    --header-top-color:#ff0e56;
+    --btn-color:#ff0e56;
+    --btn-light-color:#fdc1d3;
+}
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: white;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+#newGiveaway {
+    background-color:#ff0e56;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+}
+
+#storageClear, #reloadPage {
+    background-color:#ff0e56;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 1rem;
+}
+
+header #menu {
+    background-color: #f4f4f4;
+    padding:  4rem;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+header #menu p {
+    margin-bottom: 1rem;
+}
+
+header #menu ul {
+    list-style-type: none;
+}
+
+header #menu ul li {
+    margin-bottom: 1rem;
+}
+
+header #menu ul li input {
+    margin: 1rem 0;
+}
+
+header #menu ul li #text {
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 5px;
+    
+}
+
+.inactive {
+    visibility: hidden;
+    display:none;
+}
+
+.active {
+    visibility: visible;
+    display:block;
+}
+
+#giveaway-page .results {
+    text-align:center;
+    height: 40vh;
+}
+
+#giveaway-page .square {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+
+}
+
+#giveaway-page .results .square h3 {
+    margin-bottom: 10px;
+    color:#ff0e56;
+}
+
+#giveaway-page .imgBox {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+#giveaway-page .textBox {
+    display:flex;
+    justify-content: center;
+    margin: 5px 0 10px;
+    background-color: #f4f4f4;
+    padding: 7px 0;
+    border-radius: 5px;
+}
+
+#giveaway-page #giveawayImgPreview {
+    width: 80%;
+    border-radius: 5px;
+    border: 3px solid rgb(216, 227, 9);
+}
+#giveaway-page #winnerImgPreview {
+    width: 50%;
+    border-radius: 50%;
+    margin-top: -60px;
+    border: 3px solid rgb(227, 9, 111);
+}
+
+#giveaway-page .results-footer {
+    font-size: 14px;
+}
+
+#giveaway-page .results-footer b {
+    color:#ff0e56;
+}
+
+#giveaway-page .results-footer p:first-of-type {
+    margin-bottom: 3px;
+}
+
+#giveaway-page .results-footer p + p{
+    color: rgb(123, 123, 123);
+}
