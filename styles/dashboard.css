@@ -1,58 +1,74 @@
-:root {
-    --bg-color: #fafafa;
-    --text-color:#454545;
-    --link-color:rgba(250, 0, 110, 1);
-    --header-color: #f5f5f5;
-    --header-top-color:#ff0e56;
-    --btn-color:#ff0e56;
-    --btn-light-color:#fdc1d3;
-}
-
-* {
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-    color: var(--link-color);
-}
-
+/* DASHBOARD */
 
 body {
-    font-family: 'Kumbh Sans', sans-serif;
-    background: var(--bg-color);
-    color: var(--text-color);
+    background-color: #F0F0F0;
 }
-
-header {
-    background-color: white;
-}
-
-header > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
-
-/* DASHBOARD */
 #dashboard-page {
-    padding: 20px;
+    padding: 3%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    display: block;
+
 }
 
-#dashboard-page p {
-    margin-bottom: 40px;
+#dashboard-page .right {
+    width:60vw;
+    height: 100vh;
+    display: none;
 }
 
-#dashboard-page a {
+#dashboard-page .right img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#dashboard-page .left {
+    /* width: 40vw; */
+    /* height: 100vh; */
+    text-align: left;
+    /* margin-right: 20px; */
+}
+
+#dashboard-page .left .card-container {
+    background: url("https://images.unsplash.com/photo-1595039838779-f3780873afdd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    background-size: cover;
+    border-radius: 5px;
+    padding-top: 120px;
+}
+
+#dashboard-page .left .card-container img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto -70px;
+}
+
+#dashboard-page .left .card-container .card {
+    background-color: #f4f4f4;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid #dedede;
+}
+
+#dashboard-page .left .card-container .card h4 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#dashboard-page .left .card-container .card p {
+    margin-bottom: 20px;
+}
+
+#dashboard-page .left a button {
     background-color:#ff0e56;
     color: white;
-    padding: 20px 60px;
+    padding: 20px 20px;
     border-radius: 5px;
-
+    border: none;
+    width: 100%;
+    font-size: 16px;
 }
 
 /* GIVEAWAY IMAGE Tool */
@@ -74,38 +90,6 @@ header > div {
     margin-bottom: 1rem;
 }
 
-header #menu {
-    background-color: #f4f4f4;
-    padding:  4rem;
-    border-bottom: 1px solid rgb(230, 230, 230);
-}
-
-header #menu p {
-    margin-bottom: 1rem;
-}
-
-header #menu ul {
-    list-style-type: none;
-}
-
-header #menu ul li {
-    margin-bottom: 1rem;
-}
-
-header #menu ul li input {
-    margin: 1rem 0;
-}
-
-header #menu ul li #text {
-    margin: 1rem 0;
-    padding: 1rem;
-    width: 100%;
-    border: none;
-    border: 1px solid rgb(182, 182, 182);
-    border-radius: 5px;
-    
-}
-
 .inactive {
     visibility: hidden;
     display:none;
@@ -115,6 +99,42 @@ header #menu ul li #text {
     visibility: visible;
     display:block;
 }
+
+#giveaway-page .subHeader {
+     text-align:center;
+}
+
+#giveaway-page .subHeader .subHeaderBox button {
+    width:100%;
+    border-radius: 0;
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+#giveaway-page .subHeader #menu {
+    text-align: left;
+    padding: 40px;
+}
+
+#giveaway-page .subHeader #menu p {
+    margin-bottom: 10px;
+}
+
+#giveaway-page .subHeader #menu ul {
+    list-style-type: none;
+}
+
+#giveaway-page .subHeader #menu ul li {
+    margin: 20px 0;
+}
+
+
+#giveaway-page .subHeader #menu ul input {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(225, 225, 225);
+} 
 
 #giveaway-page .results {
     text-align:center;
@@ -128,12 +148,12 @@ header #menu ul li #text {
 
 }
 
-#giveaway-page .results .square h3 {
+#giveaway-page  .results .square h3 {
     margin-bottom: 10px;
     color:#ff0e56;
 }
 
-#giveaway-page .imgBox {
+#giveaway-page   .imgBox {
     width: 50%;
     display: block;
     margin: 0 auto;

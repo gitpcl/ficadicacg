@@ -1,54 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+    <title>Giveaway Tool</title>
+
+    <!-- Meta -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O maior portal de dicas do Mato Grosso do Sul">
+    <meta name="author" content="Pedro Lopes">
 
-    <title>Sorteio</title>
+    <!-- Links -->
+    <link href="assets/favicon.png" rel="icon" type="image/png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 
-    <link rel="stylesheet" href="./styles/dashboard.css">
+    <!--Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+
+    <!--Open Graph Protocol -->
+    <meta property="og:title" content="Siga @ficadicacg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ficadicacg.com/">
+    <meta property="og:image" content="assets/opengraph.png">
+    <meta property="og:description" content="O maior portal de dicas do Mato Grosso do Sul"/>
+
+    <script src="https://kit.fontawesome.com/7ee70a9b62.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
     <header>
-        <div>
-            <img src="./assets/logo.png" alt="FicaDicaCG Logo" style="width:80px;">
-            <button id="newGiveaway" onclick="classChange()">informações do sorteio</button>
+        <div class="header">
+            <div class="logo">
+                <img id="header-logo" src="./assets/logo.png" alt="FicaDicaCG Logo">
+            </div>
+            <div class="links">
+                <button onclick="toggleNavOpen()">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+            </div>
         </div>
-        <div id="menu" class="inactive">
-            <p>Faça o upload da imagem do sorteio e da imagem do perfil do ganhador.</p>
+        <div class="navbar">
+            <button onclick="toggleNavClose()">
+                <i class="fas fa-times fa-2x"></i>
+            </button>
+
+            <img id="logo_slider" src="./assets/logo.png" alt="Logo">
+
             <ul>
-                <li>
-                    <label for="giveawayImageFileiInput"><b>Imagem do sorteio</b></label>
-                    <input type="file" id="giveawayImageFileiInput">
-                </li>
-                <li>
-                    <label for="winnerImageFileiInput"><b>Imagem do ganhador</b></label>
-                    <input type="file" id="winnerImageFileiInput">
-                </li>
-                <p>Depois de upload as imagens clique em "Ver resultado". Para trocar as images e fazer outro sorteio faça o upload de novas imagens e clique em "Ver resultado" novamente.</p>
-                <button id="reloadPage">Ver resultado</button>
-                <p>Para deletar as images clique no botão abaixo.</p>
-                <button id="storageClear">Limpar imagens</button>
-                <p>Escreva as informações do ganhador(a) abaixo depois de ver o resultado.</p>
-                <li>
-                    <label for="handleInput"><b>Instagram do ganhador</b></label>
-                    <input type="text" class="handleInput" id="text">
-                </li>
-                <li>
-                    <label for="commentInput"><b>Comentário</b></label>
-                    <input type="text" class="commentInput" id="text">
-                </li>
-                <li>
-                    <label for="commentsInput"><b>Número de comentários</b></label>
-                    <input type="text" class="commentsInput" id="text">
-                </li>
-                
+                <a href="dashboard.html">
+                    <li>
+                        <i class="fas fa-home"></i>Dashboard
+                    </li>
+                </a>
+                <a href="giveaway-tool.html">
+                    <li>
+                        <i class="fas fa-portrait"></i>Imagem do sorteio
+                    </li>
+                </a>
+                <a href="mailto:ficadicacg@gmail.com">
+                    <li>
+                        <i class="far fa-envelope"></i>Email
+                    </li>
+                </a>
             </ul>
         </div>
     </header>
+
     <main id="giveaway-page">
+
+        <div class="subHeader">
+            <div class="subHeaderBox">
+                <button id="newGiveaway" onclick="classChange()">Entre as informações do sorteio</button>
+            </div>
+            <div id="menu" class="inactive">
+                <p>Faça o upload da imagem do sorteio e da imagem do perfil do ganhador.</p>
+                <ul>
+                    <li>
+                        <label for="giveawayImageFileiInput"><b>Imagem do sorteio</b></label>
+                        <input type="file" id="giveawayImageFileiInput">
+                    </li>
+                    <li>
+                        <label for="winnerImageFileiInput"><b>Imagem do ganhador</b></label>
+                        <input type="file" id="winnerImageFileiInput">
+                    </li>
+                    <p>Depois de upload as imagens clique em "Ver resultado". Para trocar as images e fazer outro sorteio faça o upload de imagens e clique em "Ver resultado" novamente.</p>
+                    <button id="reloadPage">Ver resultado</button>
+                    <p>Para deletar as images clique no botão abaixo.</p>
+                    <button id="storageClear">Limpar imagens</button>
+                    <p>Escreva as informações do ganhador(a) abaixo depois de ver o resultado.</p>
+                    <li>
+                        <label for="handleInput"><b>Instagram do ganhador</b></label>
+                        <input type="text" class="handleInput" id="text">
+                    </li>
+                    <li>
+                        <label for="commentInput"><b>Comentário</b></label>
+                        <input type="text" class="commentInput" id="text">
+                    </li>
+                    <li>
+                        <label for="commentsInput"><b>Número de comentários</b></label>
+                        <input type="text" class="commentsInput" id="text">
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
 
         <div class="results">
 
@@ -83,8 +140,15 @@
             </div>
         </div>
         
-
     </main>
-    <script src="./scripts/tools.js"></script>
+    <!-- Jquery csn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Chart.js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+   <script src="./scripts/app.js"></script>
+   <script src="./scripts/count.js"></script>
+   <script src="./scripts/tools.js"></script>
 </body>
 </html>

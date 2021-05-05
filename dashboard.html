@@ -1,24 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Dashboard</title>
+
+    <!-- Meta -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O maior portal de dicas do Mato Grosso do Sul">
+    <meta name="author" content="Pedro Lopes">
 
-    <title>Sorteio</title>
+    <!-- Links -->
+    <link href="assets/favicon.png" rel="icon" type="image/png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 
-    <link rel="stylesheet" href="./styles/dashboard.css">
+    <!--Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+
+    <!--Open Graph Protocol -->
+    <meta property="og:title" content="Siga @ficadicacg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ficadicacg.com/">
+    <meta property="og:image" content="assets/opengraph.png">
+    <meta property="og:description" content="O maior portal de dicas do Mato Grosso do Sul"/>
+
+    <script src="https://kit.fontawesome.com/7ee70a9b62.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
     <header>
-        <div>
-            <img src="./assets/logo.png" alt="FicaDicaCG Logo" style="width:80px;">
+        <div class="covid">
+            <div class="warning">
+                <a href="https://covid19.apple.com/screening/">
+                    <p>Aprenda sobre COVID-19 e veja os próximos passos</p>
+                </a>
+            </div>
+        </div>
+        <div class="header">
+            <div class="logo">
+                <img id="header-logo" src="./assets/logo.png" alt="FicaDicaCG Logo">
+            </div>
+            <div class="links">
+                <button onclick="toggleNavOpen()">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+            </div>
+        </div>
+        <div class="navbar">
+            <button onclick="toggleNavClose()">
+                <i class="fas fa-times fa-2x"></i>
+            </button>
+
+            <img id="logo_slider" src="./assets/logo.png" alt="Logo">
+
+            <ul>
+                <a href="dashboard.html">
+                    <li>
+                        <i class="fas fa-home"></i>Dashboard
+                    </li>
+                </a>
+                <a href="giveaway-tool.html">
+                    <li>
+                        <i class="fas fa-portrait"></i>Imagem do sorteio
+                    </li>
+                </a>
+                <a href="mailto:ficadicacg@gmail.com">
+                    <li>
+                        <i class="far fa-envelope"></i>Email
+                    </li>
+                </a>
+            </ul>
         </div>
     </header>
     <main id="dashboard-page">
-        <p>Bem vinda a dashboard do @ficadicacg!</p>
-        <a href="/giveaway-tool.html">Criar imagem do sorteio</a>
+        <div class="left">
+            <div class="card-container">
+                <img src="assets/may.jpg" alt="May picture">
+                <div class="card">
+                    <h4>Bem vinda a nossa dashboard!</h4>
+                    <p>Aqui é o nossso espacinho secreto onde vamos construir ferramentas que facilite nosso trabalho.<br><br>Veja nossa primeira ferramenta abaixo:</p>
+                    <a href="/giveaway-tool.html"><button>Criar imagem do sorteio</button></a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="right">
+            <div>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fglobal-uploads.webflow.com%2F5c2881e33c78e5118090b83b%2F5c33ad0b46fbeb299bb7e3be_Animated%2520iPhone%2520X%2520Mockup%2520Vol.2.gif&f=1&nofb=1" alt="Imagem da Dashboard">
+            </div>
+        </div>
+        
     </main>
+
+    <!-- Jquery csn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Chart.js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+   <script src="./scripts/app.js"></script>
+   <script src="./scripts/count.js"></script>
 </body>
 </html>
