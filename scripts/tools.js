@@ -38,18 +38,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-/* CLEAR STORAGE ******************************************/
-
-const storageClear = document.querySelector('#storageClear').addEventListener("click", function() {
-    localStorage.clear();
-})
-
 /* PAGE RELOAD ******************************************/
 
 const reloadPage = document.querySelector('#reloadPage').addEventListener("click", function() {
-    location.reload() 
+    location.reload();
 })
-
 
 /* TEXT inputs ******************************************/
 
@@ -73,4 +66,11 @@ const numbersText = document.querySelector('.numbersText');
 commentsInput.addEventListener('input', write => {
     numbersText.textContent = write.target.value
 });
+
+/* CLEAR STORAGE ******************************************/
+
+const storageClear = document.querySelector('#storageClear').addEventListener("click", function() {
+    localStorage.clear();
+    location.reload();
+})
 
