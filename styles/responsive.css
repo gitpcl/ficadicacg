@@ -101,6 +101,12 @@
         grid-template-columns: repeat(1,1fr);
     }
 
+    #dashboard-page {
+        width: 80%;
+        display: flex;
+    
+    }
+
     footer .footer-wrapper .footer-head img {
         width: 4%;
     }
