@@ -108,12 +108,25 @@ body {
     padding: 40px;
 }
 
+#giveaway-page .subHeader #menu button {
+    width:100%;
+    font-size: 16px;
+}
+
+#giveaway-page .subHeader #menu h2 {
+    margin-bottom: 10px;
+}
+
 #giveaway-page .subHeader #menu p {
     margin-bottom: 10px;
 }
 
 #giveaway-page .subHeader #menu ul {
     list-style-type: none;
+}
+
+#giveaway-page .subHeader #menu ul h2 {
+    margin-bottom: 10px;
 }
 
 #giveaway-page .subHeader #menu ul li {
