@@ -188,7 +188,7 @@ header .header .links button span {
 }
 
 #home-page .right .intro .cards-social .card-social p i {
-    color: var(--gold-color);
+    color: var(--header-top-color);
     margin-right: 10px;
 }
 
@@ -359,7 +359,7 @@ header .header .links button span {
  }
 
 #about-page .card .card-wrapper .inner-card img {
-     width: 50%;
+     width: 30%;
      border-radius: 50%;
      margin-top: -60px;
 }
