@@ -30,18 +30,18 @@ body {
     padding-top: 120px;
 }
 
-#dashboard-page .wrapper .card-container img {
+/* #dashboard-page .wrapper .card-container img {
     border-radius: 50%;
     display: block;
     margin: 0 auto -70px;
     width: 50%;
-}
+} */
 
 #dashboard-page .wrapper .card-container .card {
     background-color: #f4f4f4;
     border-radius: 0 0 5px 5px;
     text-align: center;
-    padding: 40px;
+    padding:  0 40px 40px 40px;
     border: 1px solid #dedede;
 }
 
