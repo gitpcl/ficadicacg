@@ -163,6 +163,7 @@ body {
     width: 50%;
     display: flex;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 25px;
     margin-bottom: 15px;
 }
 
@@ -187,7 +188,7 @@ body {
 
 #giveaway-page .results-footer {
     font-size: 14px;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 #giveaway-page .results-footer b {
@@ -200,4 +201,5 @@ body {
 
 #giveaway-page .results-footer p + p{
     color: rgb(123, 123, 123);
+    margin-top: 10px;
 }
