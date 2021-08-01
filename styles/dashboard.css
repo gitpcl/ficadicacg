@@ -154,10 +154,10 @@ body {
 
 }
 
-#giveaway-page  .results .square h3 {
+/* #giveaway-page  .results .square h3 {
     margin-bottom: 10px;
     color:#ff0e56;
-}
+} */
 
 #giveaway-page .imgBox {
     width: 50%;
@@ -187,6 +187,7 @@ body {
 
 #giveaway-page .results-footer {
     font-size: 14px;
+    margin-top: 25px;
 }
 
 #giveaway-page .results-footer b {
