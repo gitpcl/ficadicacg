@@ -44,28 +44,28 @@ const reloadPage = document.querySelector('#reloadPage').addEventListener("click
     location.reload();
 })
 
-/* TEXT inputs ******************************************/
+// /* TEXT inputs ******************************************/
 
-const handleInput = document.querySelector('.handleInput');
-const handleText = document.querySelector('.handleText');
+// const handleInput = document.querySelector('.handleInput');
+// const handleText = document.querySelector('.handleText');
 
-handleInput.addEventListener('input', write => {
-    handleText.textContent = write.target.value
-});
+// handleInput.addEventListener('input', write => {
+//     handleText.textContent = write.target.value
+// });
 
-const commentInput = document.querySelector('.commentInput');
-const commentText = document.querySelector('.commentText');
+// const commentInput = document.querySelector('.commentInput');
+// const commentText = document.querySelector('.commentText');
 
-commentInput.addEventListener('input', write => {
-    commentText.textContent = write.target.value
-});
+// commentInput.addEventListener('input', write => {
+//     commentText.textContent = write.target.value
+// });
 
-const commentsInput = document.querySelector('.commentsInput');
-const numbersText = document.querySelector('.numbersText');
+// const commentsInput = document.querySelector('.commentsInput');
+// const numbersText = document.querySelector('.numbersText');
 
-commentsInput.addEventListener('input', write => {
-    numbersText.textContent = write.target.value
-});
+// commentsInput.addEventListener('input', write => {
+//     numbersText.textContent = write.target.value
+// });
 
 /* CLEAR STORAGE ******************************************/
 
