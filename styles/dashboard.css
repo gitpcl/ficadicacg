@@ -178,11 +178,11 @@ body {
 
 #giveaway-page #giveawayImgPreview {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
 }
 #giveaway-page #winnerImgPreview {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
 }
 
 #giveaway-page .results-footer {
