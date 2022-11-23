@@ -1,189 +1,206 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <title>Fica Dica CG | O maior portal de dicas do Mato Grosso do Sul</title>
+  <head>
+    <title>Fica Dica CG | O maior portal de dicas do Mato Grosso do Sul</title>
 
-        <!-- Meta -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="O maior portal de dicas do Mato Grosso do Sul">
-        <meta name="author" content="Pedro Lopes">
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="O maior portal de dicas do Mato Grosso do Sul"
+    />
+    <meta name="author" content="Pedro Lopes" />
 
-        <!-- Links -->
-        <link href="assets/favicon.png" rel="icon" type="image/png">
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/responsive.css">
-        <link rel="stylesheet" href="styles/animations.css">
+    <!-- Links -->
+    <link href="assets/favicon.png" rel="icon" type="image/png" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
 
-        <!--Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    <!--Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Damion&display=swap"
+      rel="stylesheet"
+    />
 
-        <!--Open Graph Protocol -->
-        <meta property="og:title" content="Siga @ficadicacg">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://www.ficadicacg.com/">
-        <meta property="og:image" content="assets/opengraph.png">
-        <meta property="og:description" content="O maior portal de dicas do Mato Grosso do Sul"/>
+    <!--Open Graph Protocol -->
+    <meta property="og:title" content="Siga @ficadicacg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.ficadicacg.com/" />
+    <meta property="og:image" content="assets/opengraph.png" />
+    <meta
+      property="og:description"
+      content="O maior portal de dicas do Mato Grosso do Sul"
+    />
 
-        <script src="https://kit.fontawesome.com/7ee70a9b62.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7ee70a9b62.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="covid">
+        <div class="warning">
+          <a href="https://covid19.apple.com/screening/">
+            <p>Aprenda sobre COVID-19 e veja os próximos passos</p>
+          </a>
+        </div>
+      </div>
+      <div class="header">
+        <div class="logo">
+          <img id="header-logo" src="./assets/logo.png" alt="FicaDicaCG Logo" />
+        </div>
+        <div class="links">
+          <button onclick="toggleNavOpen()">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
+        </div>
+      </div>
+      <div class="navbar">
+        <button onclick="toggleNavClose()">
+          <i class="fas fa-times fa-2x"></i>
+        </button>
 
-    </head>
-    <body>
-        <header>
-            <div class="covid">
-                <div class="warning">
-                    <a href="https://covid19.apple.com/screening/">
-                        <p>Aprenda sobre COVID-19 e veja os próximos passos</p>
-                    </a>
-                </div>
+        <img id="logo_slider" src="./assets/logo.png" alt="Logo" />
+
+        <ul>
+          <a href="index.html">
+            <li><i class="fas fa-home"></i>Inicio</li>
+          </a>
+          <a href="about.html">
+            <li><i class="far fa-address-card"></i>Sobre</li>
+          </a>
+          <a href="analytics.html">
+            <li><i class="fas fa-chart-line"></i>Media Kit</li>
+          </a>
+          <a href="mailto:ficadicacg@gmail.com">
+            <li><i class="far fa-envelope"></i>Email</li>
+          </a>
+          <a href="prices.html">
+            <li><i class="fa fa-money"></i>Tabela de Preços</li>
+          </a>
+        </ul>
+      </div>
+    </header>
+
+    <main id="home-page">
+      <div class="wrapper">
+        <div class="right">
+          <div class="intro">
+            <div class="head">
+              <img
+                class="animate-up"
+                src="assets/logo.png"
+                alt="FicaDicaCG Icon"
+              />
+              <h3>Somos um portal de dicas</h3>
+              <h1>FICA DICA CG</h1>
             </div>
-            <div class="header">
-                <div class="logo">
-                    <img id="header-logo" src="./assets/logo.png" alt="FicaDicaCG Logo">
-                </div>
-                <div class="links">
-                    <button onclick="toggleNavOpen()">
-                        <i class="fas fa-bars fa-2x"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="navbar">
-                <button onclick="toggleNavClose()">
-                    <i class="fas fa-times fa-2x"></i>
-                </button>
-
-                <img id="logo_slider" src="./assets/logo.png" alt="Logo">
-
-                <ul>
-                    <a href="index.html">
-                        <li>
-                            <i class="fas fa-home"></i>Inicio
-                        </li>
-                    </a>
-                    <a href="about.html">
-                        <li>
-                            <i class="far fa-address-card"></i>Sobre
-                        </li>
-                    </a>
-                    <a href="analytics.html">
-                        <li>
-                            <i class="fas fa-chart-line"></i>Media Kit
-                        </li>
-                    </a>
-                    <a href="mailto:ficadicacg@gmail.com">
-                        <li>
-                            <i class="far fa-envelope"></i>Email
-                        </li>
-                    </a>
-                    <a href="prices.html">
-                        <li>
-                            <i class="fa fa-money"></i>Tabela de Preços
-                        </li>
-                    </a>
-                </ul>
-            </div>
-        </header>
-
-        <main id="home-page">
-            <div class="wrapper">
-                <div class="right">
-                    <div class="intro">
-                        <div class="head">
-                            <img class="animate-up" src="assets/logo.png" alt="FicaDicaCG Icon">
-                            <h3>Somos um portal de dicas</h3>
-                            <h1>FICA DICA CG</h1>
-                        </div>
-                        <div class="cards-social">
-                            <!-- <div class="card-social">
+            <div class="cards-social">
+              <!-- <div class="card-social">
                                 <a href="https://www.instagram.com/ficadicacg/"><p>
                                     <i class="fa fa-instagram"></i><span class="followers_count_landing"></span> </a>
                             </div> -->
-                            <div class="card-social">
-                                <a href="https://www.instagram.com/ficadicacg">
-                                    <p>
-                                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                                        219 K
-                                    </p>
-                                </a>
-                                </div>
-                            <div class="card-social">
-                                <p>
-                                    <i class="fab fa-whatsapp"></i>
-                                    <a href="http://bit.ly/2wcn05c">+67 99223 4098</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="about-us">
-                        <h1>Sobre Nós</h1>
-                        <p>Olá! Esse é o nosso media kit. Abaixo você pode achar as informações demográficas. Se você gostaria de divulgar conosco por favor entre em contato via <a href="http://bit.ly/2wcn05c">Whatsapp</a>. Não fazemos atendimento via telefone ou DM.</p>
-                    </div>
-
-                    <div class="highlights">
-                        <h1>Destaques</h1>
-                        <ul>
-                            <li>Experiência em marketing</li>
-                            <li>Melhores dicas do Mato Grosso do Sul</li>
-                            <li>Prezamos por resultado</li>
-                        </ul>
-                        <a href="analytics.html">
-                            <button>Nossas estatísticas</button>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="left">
-                    <img class="animate-down" src="assets/iphone.png" alt="iPhone Image">
-                </div>
-            </div>
-
-        </main>
-        <footer>
-            <div class="footer-wrapper">
-                <div class="footer-head">
-                    <img src="assets/logo.png" alt="FicaDicaCG Logo">
-                    <span>PORTAL DE DICAS</span>
-                </div>
-                <ul>
-                    <a href="index.html">
-                        <li>INÍCIO</li>
-                    </a>
-                    <a href="about.html">
-                        <li>SOBRE</li>
-                    </a>
-                    <a href="analytics.html">
-                        <li>MEDIA KIT</li>
-                    </a>
-                </ul>
-                <span class="icons">
-                    <a href="https://www.instagram.com/ficadicacg">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    <a href="http://bit.ly/2wcn05c">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="mailto:ficadicacg@hotmail.com">
-                        <i class="fa fa-envelope-o"></i>
-                    </a>
-                </span>
+              <div class="card-social">
+                <a href="https://www.instagram.com/ficadicacg">
+                  <p>
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    222 K
+                  </p>
+                </a>
+              </div>
+              <div class="card-social">
                 <p>
-                    &copy; 2020
-                    <strong style="color: var(--blue-color);">Fica Dica CG</strong>.<br>
-                    Made with &hearts; by
-                    <a href="https://www.pedroclopes.com">Pedro Lopes</a>
+                  <i class="fab fa-whatsapp"></i>
+                  <a href="http://bit.ly/2wcn05c">+67 99223 4098</a>
                 </p>
+              </div>
             </div>
-        </footer>
+          </div>
 
-         <!-- Jquery csn link -->
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <div class="about-us">
+            <h1>Sobre Nós</h1>
+            <p>
+              Olá! Esse é o nosso media kit. Abaixo você pode achar as
+              informações demográficas. Se você gostaria de divulgar conosco por
+              favor entre em contato via
+              <a href="http://bit.ly/2wcn05c">Whatsapp</a>. Não fazemos
+              atendimento via telefone ou DM.
+            </p>
+          </div>
 
-         <!-- Chart.js link -->
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+          <div class="highlights">
+            <h1>Destaques</h1>
+            <ul>
+              <li>Experiência em marketing</li>
+              <li>Melhores dicas do Mato Grosso do Sul</li>
+              <li>Prezamos por resultado</li>
+            </ul>
+            <a href="analytics.html">
+              <button>Nossas estatísticas</button>
+            </a>
+          </div>
+        </div>
 
-        <script src="./scripts/app.js"></script>
-        <script src="./scripts/count.js"></script>
-    </body>
+        <div class="left">
+          <img
+            class="animate-down"
+            src="assets/iphone.png"
+            alt="iPhone Image"
+          />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-head">
+          <img src="assets/logo.png" alt="FicaDicaCG Logo" />
+          <span>PORTAL DE DICAS</span>
+        </div>
+        <ul>
+          <a href="index.html">
+            <li>INÍCIO</li>
+          </a>
+          <a href="about.html">
+            <li>SOBRE</li>
+          </a>
+          <a href="analytics.html">
+            <li>MEDIA KIT</li>
+          </a>
+        </ul>
+        <span class="icons">
+          <a href="https://www.instagram.com/ficadicacg">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="http://bit.ly/2wcn05c">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="mailto:ficadicacg@hotmail.com">
+            <i class="fa fa-envelope-o"></i>
+          </a>
+        </span>
+        <p>
+          &copy; 2020
+          <strong style="color: var(--blue-color)">Fica Dica CG</strong>.<br />
+          Made with &hearts; by
+          <a href="https://www.pedroclopes.com">Pedro Lopes</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Jquery csn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Chart.js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/count.js"></script>
+  </body>
 </html>
