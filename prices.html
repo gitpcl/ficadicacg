@@ -1,174 +1,197 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <title>HoustonTips | Tabela de Preços</title>
+  <head>
+    <title>HoustonTips | Tabela de Preços</title>
 
-        <!-- Meta -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="O maior portal de dicas do Mato Grosso do Sul">
-        <meta name="author" content="Pedro Lopes">
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="O maior portal de dicas do Mato Grosso do Sul"
+    />
+    <meta name="author" content="Pedro Lopes" />
 
-        <!-- Links -->
-        <link href="assets/favicon.png" rel="icon" type="image/png">
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/responsive.css">
+    <!-- Links -->
+    <link href="assets/favicon.png" rel="icon" type="image/png" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
 
-        <!--Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    <!--Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Damion&display=swap"
+      rel="stylesheet"
+    />
 
-        <!--Open Graph Protocol -->
-        <meta property="og:title" content="Table de preços">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://www.ficadicacg.com/prices.html">
-        <meta property="og:image" content="assets/opengraph-promo.png">
-        <meta property="og:description" content="Olhe nossa tabela de preços."/>
+    <!--Open Graph Protocol -->
+    <meta property="og:title" content="Table de preços" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.ficadicacg.com/prices.html" />
+    <meta property="og:image" content="assets/opengraph-promo.png" />
+    <meta property="og:description" content="Olhe nossa tabela de preços." />
 
-        <script src="https://kit.fontawesome.com/7ee70a9b62.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7ee70a9b62.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="covid">
+        <div class="warning">
+          <a href="https://covid19.apple.com/screening/">
+            <p>Aprenda sobre COVID-19 e veja os próximos passos</p>
+          </a>
+        </div>
+      </div>
+      <div class="header">
+        <div class="logo">
+          <img id="header-logo" src="./assets/logo.png" alt="FicaDicaCG Logo" />
+        </div>
+        <div class="links">
+          <button onclick="toggleNavOpen()">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
+        </div>
+      </div>
+      <div class="navbar">
+        <button onclick="toggleNavClose()">
+          <i class="fas fa-times fa-2x"></i>
+        </button>
 
-    </head>
-    <body>
-        <header>
-            <div class="covid">
-                <div class="warning">
-                    <a href="https://covid19.apple.com/screening/">
-                        <p>Aprenda sobre COVID-19 e veja os próximos passos</p>
-                    </a>
-                </div>
-            </div>
-            <div class="header">
-                <div class="logo">
-                    <img id="header-logo" src="./assets/logo.png" alt="FicaDicaCG Logo">
-                </div>
-                <div class="links">
-                    <button onclick="toggleNavOpen()">
-                        <i class="fas fa-bars fa-2x"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="navbar">
-                <button onclick="toggleNavClose()">
-                    <i class="fas fa-times fa-2x"></i>
-                </button>
+        <img id="logo_slider" src="./assets/logo.png" alt="Logo" />
 
-                <img id="logo_slider" src="./assets/logo.png" alt="Logo">
-
-                <ul>
-                    <a href="index.html">
-                        <li>
-                            <i class="fas fa-home"></i>Inicio
-                        </li>
-                    </a>
-                    <a href="about.html">
-                        <li>
-                            <i class="far fa-address-card"></i>Sobre
-                        </li>
-                    </a>
-                    <a href="analytics.html">
-                        <li>
-                            <i class="fas fa-chart-line"></i>Media Kit
-                        </li>
-                    </a>
-                    <a href="mailto:ficadicacg@gmail.com">
-                        <li>
-                            <i class="far fa-envelope"></i>Email
-                        </li>
-                    </a>
-                    <a href="prices.html">
+        <ul>
+          <a href="index.html">
+            <li><i class="fas fa-home"></i>Inicio</li>
+          </a>
+          <a href="about.html">
+            <li><i class="far fa-address-card"></i>Sobre</li>
+          </a>
+          <a href="analytics.html">
+            <li><i class="fas fa-chart-line"></i>Media Kit</li>
+          </a>
+          <a href="mailto:ficadicacg@gmail.com">
+            <li><i class="far fa-envelope"></i>Email</li>
+          </a>
+          <!-- <a href="prices.html">
                         <li>
                             <i class="fa fa-money"></i>Tabela de Preços
                         </li>
-                    </a>
-                </ul>
-            </div>
-        </header>
-        <main id="prices-page">
-            <div class="prices-head">
-                <h1>Tabela de preços</h1>
-                <h2>Veja abaixo nossa tabela de preços.</h2>
-            </div>
+                    </a> -->
+        </ul>
+      </div>
+    </header>
+    <main id="prices-page">
+      <div class="prices-head">
+        <h1>Tabela de preços</h1>
+        <h2>Veja abaixo nossa tabela de preços.</h2>
+      </div>
 
-            <div class="prices-wrapper">
-                <div class="prices-card" id="orange">
-                    <h4>Pacote #1</h4>
-                    <h3>1 POST</h3>
-                    <h1>R$150.00</h1>
-                    <span>/post</span>
-                    <p id="note">$150 por post</p>
-                    <p id="note">Você escolhe <b>foto, texto, dia e horário</b> da sua <b>postagem</b>.</p>
-                    <p id="note"><b>Começamos mediante comprovante de pagamento</b>.</p>
-                </div>
-                <div class="prices-card" id="blue">
-                    <h4>Pacote #2</h4>
-                    <h3>1 SORTEIO</h3>
-                    <h1>R$200.00</h1>
-                    <span>/por sorteio</span>
-                    <p id="note">Postamos os sorteios todo Domingo, precisamos da arte até sexta feira e tem duração de uma semana. Postamos o resultado em até 48 horas.</p>
-                    <p id="note">O sorteado é escolhido usando o software do <a href="https://sorteiogram.com/">sorteiogram.com</a></p>
-                    <p id="note"><b>Começamos mediante comprovante de pagamento</b>.</p>
-                </div>
-                <div class="prices-card" id="red">
-                    <h4>Package #3</h4>
-                    <h3>4 POSTS</h3>
-                    <p>1 SORTEIO (BRINDE) + 1 VISITA</p>
-                    <h1>R$350.00</h1>
-                    <span>total</span>
-                    <p id="note">R$ 87.50 por post</p>
-                    <p id="note">Você escolhe <b>foto, texto, dia e horário</b> da sua <b>postagem</b>.</p>
-                    <p id="note">Validade do <b>pacote</b> dois meses a partir da data de pagamento.</p>
-                    <p id="note"><b>Começamos mediante comprovante de pagamento</b>.</p>
-                </div>
-                <div class="prices-card" id="green">
-                    <h4>Pacote #4</h4>
-                    <h3>8 POSTS</h3>
-                    <p>2 SORTEIOS (BRINDE) + 2 VISITAS</p>
-                    <h1>R$500.00</h1>
-                    <span>total</span>
-                    <p id="note">R$ 62.50 por post</p>
-                    <p id="note">Você escolhe <b>foto, texto, dia e horário</b> da sua <b>postagem</b>.</p>
-                    <p id="note">Validade do <b>pacote</b> dois meses a partir da data de pagamento.</p>
-                    <p id="note"><b>Começamos mediante comprovante de pagamento</b>.</p>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div class="footer-wrapper">
-                <div class="footer-head">
-                    <img src="assets/logo.png" alt="FicaDicaCG Logo">
-                    <span>PORTAL DE DICAS</span>
-                </div>
-                <ul>
-                    <a href="index.html">
-                        <li>INÍCIO</li>
-                    </a>
-                    <a href="about.html">
-                        <li>SOBRE</li>
-                    </a>
-                    <a href="analytics.html">
-                        <li>MEDIA KIT</li>
-                    </a>
-                </ul>
-                <span class="icons">
-                    <a href="https://www.instagram.com/ficadicacg">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    <a href="http://bit.ly/2wcn05c">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="mailto:ficadicacg@hotmail.com">
-                        <i class="fa fa-envelope-o"></i>
-                    </a>
-                </span>
-                <p>
-                    &copy; 2020
-                    <strong style="color: var(--blue-color);">Fica Dica CG</strong>.<br>
-                    Made with &hearts; by
-                    <a href="https://www.pedroclopes.com">Pedro Lopes</a>
-                </p>
-            </div>
-        </footer>
+      <div class="prices-wrapper">
+        <div class="prices-card" id="orange">
+          <h4>Pacote #1</h4>
+          <h3>1 POST</h3>
+          <h1>R$150.00</h1>
+          <span>/post</span>
+          <p id="note">$150 por post</p>
+          <p id="note">
+            Você escolhe <b>foto, texto, dia e horário</b> da sua
+            <b>postagem</b>.
+          </p>
+          <p id="note"><b>Começamos mediante comprovante de pagamento</b>.</p>
+        </div>
+        <div class="prices-card" id="blue">
+          <h4>Pacote #2</h4>
+          <h3>1 SORTEIO</h3>
+          <h1>R$200.00</h1>
+          <span>/por sorteio</span>
+          <p id="note">
+            Postamos os sorteios todo Domingo, precisamos da arte até sexta
+            feira e tem duração de uma semana. Postamos o resultado em até 48
+            horas.
+          </p>
+          <p id="note">
+            O sorteado é escolhido usando o software do
+            <a href="https://sorteiogram.com/">sorteiogram.com</a>
+          </p>
+          <p id="note"><b>Começamos mediante comprovante de pagamento</b>.</p>
+        </div>
+        <div class="prices-card" id="red">
+          <h4>Package #3</h4>
+          <h3>4 POSTS</h3>
+          <p>1 SORTEIO (BRINDE) + 1 VISITA</p>
+          <h1>R$350.00</h1>
+          <span>total</span>
+          <p id="note">R$ 87.50 por post</p>
+          <p id="note">
+            Você escolhe <b>foto, texto, dia e horário</b> da sua
+            <b>postagem</b>.
+          </p>
+          <p id="note">
+            Validade do <b>pacote</b> dois meses a partir da data de pagamento.
+          </p>
+          <p id="note"><b>Começamos mediante comprovante de pagamento</b>.</p>
+        </div>
+        <div class="prices-card" id="green">
+          <h4>Pacote #4</h4>
+          <h3>8 POSTS</h3>
+          <p>2 SORTEIOS (BRINDE) + 2 VISITAS</p>
+          <h1>R$500.00</h1>
+          <span>total</span>
+          <p id="note">R$ 62.50 por post</p>
+          <p id="note">
+            Você escolhe <b>foto, texto, dia e horário</b> da sua
+            <b>postagem</b>.
+          </p>
+          <p id="note">
+            Validade do <b>pacote</b> dois meses a partir da data de pagamento.
+          </p>
+          <p id="note"><b>Começamos mediante comprovante de pagamento</b>.</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-head">
+          <img src="assets/logo.png" alt="FicaDicaCG Logo" />
+          <span>PORTAL DE DICAS</span>
+        </div>
+        <ul>
+          <a href="index.html">
+            <li>INÍCIO</li>
+          </a>
+          <a href="about.html">
+            <li>SOBRE</li>
+          </a>
+          <a href="analytics.html">
+            <li>MEDIA KIT</li>
+          </a>
+        </ul>
+        <span class="icons">
+          <a href="https://www.instagram.com/ficadicacg">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="http://bit.ly/2wcn05c">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="mailto:ficadicacg@hotmail.com">
+            <i class="fa fa-envelope-o"></i>
+          </a>
+        </span>
+        <p>
+          &copy; 2020
+          <strong style="color: var(--blue-color)">Fica Dica CG</strong>.<br />
+          Made with &hearts; by
+          <a href="https://www.pedroclopes.com">Pedro Lopes</a>
+        </p>
+      </div>
+    </footer>
 
-        <script src="./scripts/app.js"></script>
-    </body>
+    <script src="./scripts/app.js"></script>
+  </body>
 </html>
