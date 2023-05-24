@@ -158,11 +158,9 @@ body {
 } */
 
 #giveaway-page .imgBox {
-  width: 50%;
   display: flex;
-  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
   margin-top: 25px;
-  margin-bottom: 15px;
 }
 
 /* #giveaway-page .textBox {
@@ -175,6 +173,15 @@ body {
 } */
 
 #giveaway-page #giveawayImgPreview {
+  width: 100%;
+  border-radius: 5px 0 0 5px;
+}
+#giveaway-page #winnerImgPreview {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+#giveaway-page #displayGiveawayImg {
   width: 100%;
   border-radius: 5px 0 0 5px;
 }
