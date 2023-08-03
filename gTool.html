@@ -27,10 +27,10 @@
       href="https://fonts.googleapis.com/css2?family=Damion&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://unpkg.com/cropperjs/dist/cropper.css"
-    />
+    /> -->
 
     <!--Open Graph Protocol -->
     <meta property="og:title" content="Siga @ficadicacg" />
@@ -46,7 +46,7 @@
       src="https://kit.fontawesome.com/7ee70a9b62.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/cropperjs/dist/cropper.js" defer></script>
+    <!-- <script src="https://unpkg.com/cropperjs/dist/cropper.js" defer></script> -->
   </head>
   <body>
     <header>
@@ -101,8 +101,8 @@
               >
               <input type="file" id="giveawayImageFileiInput" />
 
-              <img id="giveawayImgPreview" src="#" alt="Image preview..." />
-              <button id="cropGiveawayButton">Crop</button>
+              <!-- <img id="giveawayImgPreview" src="#" alt="Image preview..." />
+              <button id="cropGiveawayButton">Crop</button> -->
             </li>
             <li>
               <label for="winnerImageFileiInput"
@@ -110,8 +110,8 @@
               >
               <input type="file" id="winnerImageFileiInput" />
 
-              <img id="winnerImgPreview" src="#" alt="Image preview..." />
-              <button id="cropWinnerButton">Crop</button>
+              <!-- <img id="winnerImgPreview" src="#" alt="Image preview..." />
+              <button id="cropWinnerButton">Crop</button> -->
             </li>
             <h2>Passo 2</h2>
             <p>Depois de upload as imagens clique no botã abaixo.</p>
@@ -132,23 +132,17 @@
         <div class="square">
           <!-- <h3>Resultado do Sorteio</h3> -->
           <div class="imgBox">
-            <div>
-              <img
-                id="displayGiveawayImg"
-                src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.jennybeaumont.com%2Fwp-content%2Fuploads%2F2015%2F03%2Fplaceholder.gif&f=1&nofb=1"
-                alt="Preview"
-                style="width: 150px"
-              />
-            </div>
+            <img
+              id="giveawayImgPreview"
+              src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.jennybeaumont.com%2Fwp-content%2Fuploads%2F2015%2F03%2Fplaceholder.gif&f=1&nofb=1"
+              alt="Preview"
+            />
 
-            <div>
-              <img
-                id="displayWinnerImg"
-                src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.jennybeaumont.com%2Fwp-content%2Fuploads%2F2015%2F03%2Fplaceholder.gif&f=1&nofb=1"
-                alt="Preview"
-                style="width: 150px"
-              />
-            </div>
+            <img
+              id="winnerImgPreview"
+              src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.jennybeaumont.com%2Fwp-content%2Fuploads%2F2015%2F03%2Fplaceholder.gif&f=1&nofb=1"
+              alt="Preview"
+            />
           </div>
 
           <div class="resultsBox">

@@ -2,90 +2,49 @@ function classChange() {
   document.getElementById('menu').classList.toggle('active')
 }
 
-let cropper = null
-
-function readAndPreview(file, imageElementId) {
-  const reader = new FileReader()
-
-  reader.addEventListener('load', () => {
-    const imgElement = document.querySelector(`#${imageElementId}`)
-    imgElement.src = reader.result
-
-    if (cropper !== null) {
-      cropper.destroy()
-    }
-    cropper = new Cropper(imgElement, {
-      aspectRatio: 1,
-      autoCropArea: 1,
-      viewMode: 1,
-      dragMode: 'move',
-      cropBoxMovable: false,
-      cropBoxResizable: false
-    })
-  })
-
-  reader.readAsDataURL(file)
-}
+/* IMAGES STORAGE ******************************************/
 
 document
   .querySelector('#giveawayImageFileiInput')
   .addEventListener('change', function () {
-    readAndPreview(this.files[0], 'giveawayImgPreview')
+    const reader = new FileReader()
+
+    reader.addEventListener('load', () => {
+      localStorage.setItem('giveaway-image', reader.result)
+    })
+
+    reader.readAsDataURL(this.files[0])
   })
 
 document
   .querySelector('#winnerImageFileiInput')
   .addEventListener('change', function () {
-    readAndPreview(this.files[0], 'winnerImgPreview')
+    const reader = new FileReader()
+
+    reader.addEventListener('load', () => {
+      localStorage.setItem('winner-image', reader.result)
+    })
+
+    reader.readAsDataURL(this.files[0])
   })
 
-document
-  .querySelector('#cropGiveawayButton')
-  .addEventListener('click', function () {
-    if (cropper) {
-      const croppedImageDataURL = cropper
-        .getCroppedCanvas({ width: 1080, height: 1080 })
-        .toDataURL('image/png')
-      localStorage.setItem('giveaway-image', croppedImageDataURL)
-      localStorage.setItem('giveaway-image-front', croppedImageDataURL)
-      document.querySelector('#giveawayImgPreview').src = croppedImageDataURL
-      cropper.destroy()
-    }
-  })
-
-document
-  .querySelector('#cropWinnerButton')
-  .addEventListener('click', function () {
-    if (cropper) {
-      const croppedImageDataURL = cropper
-        .getCroppedCanvas({ width: 1080, height: 1080 })
-        .toDataURL('image/png')
-      localStorage.setItem('winner-image', croppedImageDataURL)
-      localStorage.setItem('winner-image-front', croppedImageDataURL)
-      document.querySelector('#winnerImgPreview').src = croppedImageDataURL
-      cropper.destroy()
-    }
-  })
-
-window.onload = () => {
-  console.log('window loaded')
+document.addEventListener('DOMContentLoaded', () => {
   const giveawayImageDataURL = localStorage.getItem('giveaway-image')
+
   const winnerImageDataURL = localStorage.getItem('winner-image')
 
   if (giveawayImageDataURL) {
-    const giveawayImg = document.querySelector('#giveawayImgPreview')
-    const displayGiveawayImg = document.querySelector('#displayGiveawayImg')
-    giveawayImg.src = giveawayImageDataURL
-    displayGiveawayImg.src = giveawayImageDataURL
+    document
+      .querySelector('#giveawayImgPreview')
+      .setAttribute('src', giveawayImageDataURL)
   }
 
   if (winnerImageDataURL) {
-    const winnerImg = document.querySelector('#winnerImgPreview')
-    const displayWinnerImg = document.querySelector('#displayWinnerImg')
-    winnerImg.src = winnerImageDataURL
-    displayWinnerImg.src = winnerImageDataURL
+    document
+      .querySelector('#winnerImgPreview')
+      .setAttribute('src', winnerImageDataURL)
   }
-}
+})
 
 /* PAGE RELOAD ******************************************/
 
@@ -94,6 +53,29 @@ const reloadPage = document
   .addEventListener('click', function () {
     location.reload()
   })
+
+// /* TEXT inputs ******************************************/
+
+// const handleInput = document.querySelector('.handleInput');
+// const handleText = document.querySelector('.handleText');
+
+// handleInput.addEventListener('input', write => {
+//     handleText.textContent = write.target.value
+// });
+
+// const commentInput = document.querySelector('.commentInput');
+// const commentText = document.querySelector('.commentText');
+
+// commentInput.addEventListener('input', write => {
+//     commentText.textContent = write.target.value
+// });
+
+// const commentsInput = document.querySelector('.commentsInput');
+// const numbersText = document.querySelector('.numbersText');
+
+// commentsInput.addEventListener('input', write => {
+//     numbersText.textContent = write.target.value
+// });
 
 /* CLEAR STORAGE ******************************************/
 
