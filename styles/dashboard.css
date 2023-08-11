@@ -164,12 +164,6 @@ body {
   width: 100%;
   margin-top: 25px;
 }
-
-#giveawayImgPreview,
-#winnerImgPreview {
-  width: 100%;
-}
-
 /* #giveaway-page .textBox {
     display:flex;
     justify-content: center;
@@ -180,21 +174,18 @@ body {
 } */
 
 #giveaway-page #giveawayImgPreview {
-  width: 100%;
+  width: 50%;
   border-radius: 5px 0 0 5px;
 }
+
 #giveaway-page #winnerImgPreview {
-  width: 100%;
+  width: 50%;
   border-radius: 0 5px 5px 0;
 }
 
 #giveaway-page #displayGiveawayImg {
   width: 100%;
   border-radius: 5px 0 0 5px;
-}
-#giveaway-page #winnerImgPreview {
-  width: 100%;
-  border-radius: 0 5px 5px 0;
 }
 
 #giveaway-page .results-footer {
