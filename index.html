@@ -42,16 +42,10 @@
       src="https://kit.fontawesome.com/7ee70a9b62.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <header>
-      <div class="covid">
-        <div class="warning">
-          <a href="https://covid19.apple.com/screening/">
-            <p>Aprenda sobre COVID-19 e veja os próximos passos</p>
-          </a>
-        </div>
-      </div>
       <div class="header">
         <div class="logo">
           <img id="header-logo" src="./assets/logo.png" alt="FicaDicaCG Logo" />
@@ -90,42 +84,14 @@
     </header>
 
     <main id="home-page">
-      <div class="wrapper">
-        <div class="right">
-          <div class="intro">
-            <div class="head">
-              <img
-                class="animate-up"
-                src="assets/logo.png"
-                alt="FicaDicaCG Icon"
-              />
-              <h3>Somos um portal de dicas</h3>
-              <h1>FICA DICA CG</h1>
-            </div>
-            <div class="cards-social">
-              <!-- <div class="card-social">
-                                <a href="https://www.instagram.com/ficadicacg/"><p>
-                                    <i class="fa fa-instagram"></i><span class="followers_count_landing"></span> </a>
-                            </div> -->
-              <div class="card-social">
-                <a href="https://www.instagram.com/ficadicacg">
-                  <p>
-                    <i class="fab fa-instagram" aria-hidden="true"></i>
-                    222 K
-                  </p>
-                </a>
-              </div>
-              <div class="card-social">
-                <p>
-                  <i class="fab fa-whatsapp"></i>
-                  <a href="http://bit.ly/2wcn05c">+67 99223 4098</a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="about-us">
-            <h1>Sobre Nós</h1>
+      <div class="mx-8 md:max-w-7xl md:mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div
+            class="mt-12 md:mt-0 md:flex md:flex-col md:justify-center md:h-screen"
+          >
+            <h1 class="font-bold text-4xl md:text-6xl mb-4">
+              O maior portal de dicas do Mato Grosso do Sul
+            </h1>
             <p>
               Olá! Esse é o nosso media kit. Abaixo você pode achar as
               informações demográficas. Se você gostaria de divulgar conosco por
@@ -133,27 +99,23 @@
               <a href="http://bit.ly/2wcn05c">Whatsapp</a>. Não fazemos
               atendimento via telefone ou DM.
             </p>
-          </div>
-
-          <div class="highlights">
-            <h1>Destaques</h1>
-            <ul>
-              <li>Experiência em marketing</li>
-              <li>Melhores dicas do Mato Grosso do Sul</li>
-              <li>Prezamos por resultado</li>
-            </ul>
-            <a href="analytics.html">
-              <button>Nossas estatísticas</button>
+            <a href="http://bit.ly/2wcn05c">
+              <button
+                class="px-6 py-4 bg-[#FE016F] rounded-3xl text-white mt-4"
+              >
+                <i class="fab fa-whatsapp"></i>
+                +67 99223 4098
+              </button>
             </a>
           </div>
-        </div>
 
-        <div class="left">
-          <img
-            class="animate-down"
-            src="assets/iphone.png"
-            alt="iPhone Image"
-          />
+          <div>
+            <img
+              class="animate-down block w-[60%] mx-auto mt-12"
+              src="assets/iphone.png"
+              alt="iPhone Image"
+            />
+          </div>
         </div>
       </div>
     </main>
@@ -189,7 +151,7 @@
           &copy; 2020
           <strong style="color: var(--blue-color)">Fica Dica CG</strong>.<br />
           Made with &hearts; by
-          <a href="https://www.pedroclopes.com">Pedro Lopes</a>
+          <a href="https://www.lopesstudio.com">Lopes Studio</a>
         </p>
       </div>
     </footer>

@@ -1,114 +1,113 @@
-@media (min-width:600px) {
+@media (min-width: 600px) {
+  #home-page .wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    #home-page .wrapper {
-        width:80%;
-        margin:0 auto;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
+  #home-page .right .intro .head,
+  #home-page .right .about-us,
+  #home-page .right .highlights {
+    width: 100%;
+    margin: 0 auto;
+  }
 
-    #home-page .right .intro .head,
-    #home-page .right .about-us,
-    #home-page .right .highlights {
-        width: 100%;
-        margin:0 auto;
-    }
+  #home-page .right .intro .cards-social {
+    width: 80%;
+    margin: 0 auto;
+  }
 
-    #home-page .right .intro .cards-social {
-        width: 80%;
-        margin:0 auto;
-    }
+  #home-page .right .intro .head img {
+    width: 20%;
+    margin: 40px 20px;
+  }
 
-    #home-page .right .intro .head img {
-        width: 20%;
-        margin: 40px 20px;
-    }
+  #home-page .left {
+    width: 100%;
+    margin: 0 auto;
+    display: inline;
+  }
 
-    #home-page .left {
-        width: 100%;
-        margin:0 auto;
-        display: inline;
-    }
+  #home-page .left img {
+    display: block;
+    width: 60%;
+    margin: auto;
+    margin-top: 8%;
+  }
 
-    #home-page .left img {
-        width:80%;
-    }
+  #about-page .card {
+    width: 80%;
+    margin: 20px auto;
+  }
 
-    #about-page .card {
-        width:80%;
-        margin: 20px auto;
-    }
+  #about-page .card .card-wrapper {
+    display: flex;
+  }
 
-    #about-page .card .card-wrapper {
-        display:flex;
+  #about-page .card .card-wrapper .inner-card img {
+    width: 20%;
+    margin-top: -30px;
+  }
 
-    }
+  #about-page .card .card-wrapper .inner-card:first-child {
+    margin-right: 20px;
+  }
 
-    #about-page .card .card-wrapper .inner-card img {
-        width: 20%;
-        margin-top: -30px;
-   }
+  #about-page .card .inner-card {
+    width: 50%;
+    margin: 80px auto 0;
+  }
 
-    #about-page .card .card-wrapper .inner-card:first-child {
-        margin-right: 20px;
-    }
+  #about-page .card .inner-card img {
+    width: 20%;
+  }
 
-    #about-page .card .inner-card {
-        width: 50%;
-        margin: 80px auto 0;
+  #analytics-page .cards-stats {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+  }
 
-    }
+  #analytics-page .charts-containers {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    #about-page .card .inner-card img {
-        width:20%;
-    }
+  #prices-page .prices-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    #analytics-page .cards-stats {
-        width:80%;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap:10px;
-        margin:0 auto;
-    }
+  #offer-page .offer-head img {
+    width: 20%;
+  }
 
-    #analytics-page .charts-containers {
-        width: 80%;
-        margin: 0 auto;
-        display:grid;
-        grid-template-columns: repeat(3,1fr);
-    }
+  #offer-page .offer-head h3 {
+    width: 35%;
+  }
 
-    #prices-page .prices-wrapper {
-        width:80%;
-        margin:0 auto;
-        grid-template-columns: repeat(2,1fr);
-    }
+  #offer-page .offer-head h4 {
+    width: 35%;
+  }
 
-    #offer-page .offer-head img {
-        width: 20%;
-    }
+  #offer-page .offer-wrapper {
+    width: 40%;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    #offer-page .offer-head h3 {
-        width:35%;
-    }
+  #dashboard-page {
+    width: 80%;
+    display: flex;
+  }
 
-    #offer-page .offer-head h4 {
-        width:35%;
-    }
-
-    #offer-page .offer-wrapper {
-        width:40%;
-        margin:0 auto;
-        grid-template-columns: repeat(1,1fr);
-    }
-
-    #dashboard-page {
-        width: 80%;
-        display: flex;
-    
-    }
-
-    footer .footer-wrapper .footer-head img {
-        width: 4%;
-    }
+  footer .footer-wrapper .footer-head img {
+    width: 4%;
+  }
 }
